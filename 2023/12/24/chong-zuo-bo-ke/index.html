@@ -54,7 +54,8 @@ Hexo框">
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="/js/prism/prism.css">
-<meta name="generator" content="Hexo 7.0.0"></head>
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -406,7 +407,7 @@ Hexo框">
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程</a></p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://imgse.com/">路过图床:imgse</a>@<a href="mailto:&#x78;&#x75;&#122;&#x68;&#105;&#x77;&#x65;&#105;&#x72;&#x6f;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#109;">&#x78;&#x75;&#122;&#x68;&#105;&#x77;&#x65;&#105;&#x72;&#x6f;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#109;</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://imgse.com/">路过图床:imgse</a>@<a href="mailto:&#120;&#117;&#122;&#104;&#x69;&#119;&#x65;&#x69;&#114;&#x6f;&#x40;&#49;&#x36;&#51;&#46;&#x63;&#111;&#x6d;">&#120;&#117;&#122;&#104;&#x69;&#119;&#x65;&#x69;&#114;&#x6f;&#x40;&#49;&#x36;&#51;&#46;&#x63;&#111;&#x6d;</a></p>
 </li>
 </ol>
 <h1 id="3、实践"><a href="#3、实践" class="headerlink" title="3、实践"></a>3、实践</h1><h2 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h2><p>开始准备将Hexo静态博客部署在gitee的gitpage上。<br><a target="_blank" rel="noopener" href="https://imgse.com/i/piHQ5Ct"><img src="https://s11.ax1x.com/2023/12/24/piHQ5Ct.jpg" alt="方案1.jpg"></a><br>但是经过了解，除了访问速度快外，存在很多缺陷，还要实名认真。以下是<a target="_blank" rel="noopener" href="https://oranlj.gitee.io/2021/08/23/blog/blog-set-up/">几种方案对比</a><a target="_blank" rel="noopener" href="https://imgse.com/i/piHQogf"><img src="https://s11.ax1x.com/2023/12/24/piHQogf.png" alt="几种方案对比.png"></a></p>
@@ -764,16 +765,7 @@ IPAddress subnetMask();
         display: none;
         
         font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
+        color: #ff77a6;
     }
 
     
@@ -784,10 +776,10 @@ IPAddress subnetMask();
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="9143039841"
                    fixed='true'
                    autoplay='false'
-                   theme='#42b983'
+                   theme='#ff77a6'
                    loop='all'
                    order='random'
                    preload='auto'
@@ -804,11 +796,11 @@ IPAddress subnetMask();
     
 
     <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2024</span>
+                <span id="year">2021-2024</span>
             
             <a href="/about" target="_blank">FormerSouthWind</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -835,6 +827,60 @@ IPAddress subnetMask();
             <br>
 
             <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "3";
+                        var startDate = "25";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
             
             <br>
             
