@@ -393,18 +393,14 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "人把自己置身于忙碌当中，有一种麻木的踏实，但丧失了真实，你的青春也不过只有这些日子。",
-                            
-                                "什么是真实？",
-                            
-                                "你看到什么，听到什么，做什么，和谁在一起，有一种，从心灵深处，满溢出来的不懊悔，也不羞耻的平和与喜悦。",
+                                "人把自己置身于忙碌当中，有一种麻木的踏实，但丧失了真实，你的青春也不过只有这些日子。什么是真实？你看到什么，听到什么，做什么，和谁在一起，有一种，从心灵深处，满溢出来的不懊悔，也不羞耻的平和与喜悦。",
                             
                         ],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: false,
                         backSpeed: 50,
-                        showCursor: true
+                        showCursor: false
                     });
                 </script>
                 
@@ -421,7 +417,8 @@
 </script>
 <script>
     
-      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
+      // 每天切换 banner 图.  Switch banner image every day.
+      var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
     
     $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
 
@@ -435,19 +432,19 @@
                 </a>
 
                 
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
+                    <a href="https://github.com/former-south-wind/former-south-wind.github.io" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>GITHUB
                     </a>
                 
             </div>
             <div class="cover-social-link">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/former-south-wind" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:xuzhiweiro@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -457,7 +454,7 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2926700458" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2926700458" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -567,9 +564,13 @@
                         <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
 <div class="video-player">
     
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;最新投稿
+    </div>
+    
     <div class="row">
 		
-			<iframe src='https://player.bilibili.com/player.html?aid=956301555&bvid=BV1op4y1V73z&cid=1208799656&p=1' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  style="height: 450px;" width="100%"> </iframe>
+			<iframe src='https://player.bilibili.com/player.html?aid=956301555&bvid=BV1op4y1V73z&cid=1208799656&p=1' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  style="height: 400px;" width="100%"> </iframe>
 		
     </div>
 </div>
@@ -754,6 +755,9 @@ Hexo框
             
             <br>
             
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">290</span>
+            
             
             
                 
@@ -832,13 +836,13 @@ Hexo框
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/former-south-wind" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:xuzhiweiro@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -848,7 +852,7 @@ Hexo框
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2926700458" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2926700458" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -1017,6 +1021,15 @@ $(function () {
 
     
     
+    
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura-small.js"><\/script>');
+            }
+        </script>
     
 
     <!-- 雪花特效 -->
