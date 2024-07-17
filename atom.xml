@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Souther Blog</title>
+  
+  
+  <link href="http://former-south-wind.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://former-south-wind.github.io/"/>
+  <updated>2024-07-17T16:17:56.376Z</updated>
+  <id>http://former-south-wind.github.io/</id>
+  
+  <author>
+    <name>旧时南风</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>esp32墨水屏桌面小屏幕</title>
+    <link href="http://former-south-wind.github.io/2024/07/17/esp32-mo-shui-ping-zhuo-mian-xiao-ping-mu/"/>
+    <id>http://former-south-wind.github.io/2024/07/17/esp32-mo-shui-ping-zhuo-mian-xiao-ping-mu/</id>
+    <published>2024-07-17T00:10:07.000Z</published>
+    <updated>2024-07-17T16:17:56.376Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、学习&quot;&gt;&lt;a href=&quot;#1、学习&quot; class=&quot;headerlink&quot; title=&quot;1、学习&quot;&gt;&lt;/a&gt;1、学习&lt;/h1&gt;&lt;p&gt;​	&lt;strong&gt;参考&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="嵌入式开发" scheme="http://former-south-wind.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电子产品外壳制作-Solidworks</title>
+    <link href="http://former-south-wind.github.io/2024/07/14/dian-zi-chan-pin-wai-ke-zhi-zuo-solidworks/"/>
+    <id>http://former-south-wind.github.io/2024/07/14/dian-zi-chan-pin-wai-ke-zhi-zuo-solidworks/</id>
+    <published>2024-07-14T08:20:46.000Z</published>
+    <updated>2024-07-17T16:27:30.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、学习&quot;&gt;&lt;a href=&quot;#1、学习&quot; class=&quot;headerlink&quot; title=&quot;1、学习&quot;&gt;&lt;/a&gt;1、学习&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="机械设计" scheme="http://former-south-wind.github.io/tags/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ExpressLRS</title>
+    <link href="http://former-south-wind.github.io/2024/07/14/expresslrs/"/>
+    <id>http://former-south-wind.github.io/2024/07/14/expresslrs/</id>
+    <published>2024-07-14T00:33:55.000Z</published>
+    <updated>2024-07-17T16:15:30.250Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、ELRS工程编译及固件下载&quot;&gt;&lt;a href=&quot;#1、ELRS工程编译及固件下载&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="航模" scheme="http://former-south-wind.github.io/tags/%E8%88%AA%E6%A8%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>esp32s3</title>
+    <link href="http://former-south-wind.github.io/2024/07/13/esp32s3/"/>
+    <id>http://former-south-wind.github.io/2024/07/13/esp32s3/</id>
+    <published>2024-07-13T05:44:21.000Z</published>
+    <updated>2024-07-17T16:17:07.832Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、乐鑫ESP32S3&quot;&gt;&lt;a href=&quot;#1、乐鑫ESP32S3&quot; class=&quot;headerlink&quot; title=&quot;1、乐鑫ESP32S3&quot;&gt;&lt;/a&gt;1、乐鑫ESP32S3&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="嵌入式开发" scheme="http://former-south-wind.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派使用及linux常用命令</title>
+    <link href="http://former-south-wind.github.io/2024/07/11/shu-mei-pai-shi-yong-ji-linux-chang-yong-ming-ling/"/>
+    <id>http://former-south-wind.github.io/2024/07/11/shu-mei-pai-shi-yong-ji-linux-chang-yong-ming-ling/</id>
+    <published>2024-07-11T10:41:33.000Z</published>
+    <updated>2024-07-17T16:24:37.125Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、树莓派&quot;&gt;&lt;a href=&quot;#1、树莓派&quot; class=&quot;headerlink&quot; title=&quot;1、树莓派&quot;&gt;&lt;/a&gt;1、树莓派&lt;/h1&gt;&lt;h2 id=&quot;1、常用命令&quot;&gt;&lt;a href=&quot;#1、常用命令&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://former-south-wind.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内存管理-堆栈</title>
+    <link href="http://former-south-wind.github.io/2024/07/05/nei-cun-guan-li-dui-zhan/"/>
+    <id>http://former-south-wind.github.io/2024/07/05/nei-cun-guan-li-dui-zhan/</id>
+    <published>2024-07-05T08:39:21.000Z</published>
+    <updated>2024-07-11T11:51:04.060Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Conclusion&quot;&gt;&lt;a href=&quot;#Conclusion&quot; class=&quot;headerlink&quot; title=&quot;Conclusion&quot;&gt;&lt;/a&gt;Conclusion&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;The data stored on the stack is</summary>
+        
+      
+    
+    
+    
+    
+    <category term="计算机" scheme="http://former-south-wind.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客搭建</title>
+    <link href="http://former-south-wind.github.io/2023/12/24/hexo-bo-ke-da-jian/"/>
+    <id>http://former-south-wind.github.io/2023/12/24/hexo-bo-ke-da-jian/</id>
+    <published>2023-12-24T13:36:07.000Z</published>
+    <updated>2024-07-17T16:28:50.355Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、背景-目标&quot;&gt;&lt;a href=&quot;#1、背景-目标&quot; class=&quot;headerlink&quot; title=&quot;1、背景&amp;amp;目标&quot;&gt;&lt;/a&gt;1、背景&amp;amp;目标&lt;/h1&gt;&lt;p&gt;由于很长时间没有记录、更换github账号、本地电脑重置、使用的&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="前端" scheme="http://former-south-wind.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>
