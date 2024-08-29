@@ -6,7 +6,7 @@
   <link href="http://former-south-wind.github.io/atom.xml" rel="self"/>
   
   <link href="http://former-south-wind.github.io/"/>
-  <updated>2024-08-29T14:43:36.739Z</updated>
+  <updated>2024-07-23T14:45:12.060Z</updated>
   <id>http://former-south-wind.github.io/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://former-south-wind.github.io/2024/08/29/hello-world/"/>
-    <id>http://former-south-wind.github.io/2024/08/29/hello-world/</id>
-    <published>2024-08-29T14:43:36.738Z</published>
-    <updated>2024-08-29T14:43:36.739Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Git</title>
@@ -480,6 +459,29 @@
     
     
     <category term="嵌入式开发" scheme="http://former-south-wind.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>魔方闲玩</title>
+    <link href="http://former-south-wind.github.io/2021/04/04/mo-fang-xian-wan/"/>
+    <id>http://former-south-wind.github.io/2021/04/04/mo-fang-xian-wan/</id>
+    <published>2021-04-04T08:14:03.000Z</published>
+    <updated>2024-07-19T10:58:05.093Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、起因&quot;&gt;&lt;a href=&quot;#1、起因&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="魔方" scheme="http://former-south-wind.github.io/tags/%E9%AD%94%E6%96%B9/"/>
     
   </entry>
   
