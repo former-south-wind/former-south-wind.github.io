@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html>
+  <!-- meta/link... -->
+  
+
+
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  <title>随笔日志 | Souther Blog</title>
+
+  <link rel="icon" type="image/png" href="/medias/icons/favicon.png">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
+  <link href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
+  
+  
+    <script>
+        var themeModelId = '4';
+        if (themeModelId) {
+            localStorage.setItem('modelId', themeModelId);
+        }
+    </script>
+    
+    <script async src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
+    <script>
+        var live2dOpen = eval('true') || false;
+        if (!live2dOpen) {
+            localStorage.setItem('waifu-display', 1609323474481);
+        }
+    </script>
+  
+  
+  
+<link rel="stylesheet" href="/css/animate.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+    <link href="https://unpkg.com/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet">
+  
+  
+    
+<link rel="stylesheet" href="/js/shareJs/share.min.css">
+
+  
+  <style>
+        @media (max-width: 992px) {
+            #waifu {
+                display: none;
+            }
+        }
+    </style>
+    <script defer src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+    
+    
+    <!-- 依赖于jquery和vue -->
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
+
+    <!-- import link -->
+    
+        
+            <link href="/custom/index.css" rel="stylesheet">
+        
+    
+    <!-- import script -->
+    
+        
+            
+        
+            
+        
+    
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Souther Blog" type="application/atom+xml">
+</head>
+
+  
+  <!-- 预加载动画 -->
+  
+  
+  <div class="preloader-1" id="loader">
+  <div  aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+    <div class="wheel"></div>
+    <div class="hamster">
+      <div class="hamster__body">
+        <div class="hamster__head">
+          <div class="hamster__ear"></div>
+          <div class="hamster__eye"></div>
+          <div class="hamster__nose"></div>
+        </div>
+        <div class="hamster__limb hamster__limb--fr"></div>
+        <div class="hamster__limb hamster__limb--fl"></div>
+        <div class="hamster__limb hamster__limb--br"></div>
+        <div class="hamster__limb hamster__limb--bl"></div>
+        <div class="hamster__tail"></div>
+      </div>
+    </div>
+    <div class="spoke"></div>
+  </div>
+</div>
+  <script>
+    var endLoading = function () {
+      document.body.style.overflow = 'auto';
+      document.getElementById('loader').classList.add("loaded");
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+  </script>
+
+
+  <body>
+    <!-- 判断是否为暗黑风格 -->
+    <!-- 判断是否为黑夜模式 -->
+<script defer>
+  let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+
+  if (isDark) {
+    $(document.body).addClass('darkModel');
+  }
+</script>
+
+    <!-- 需要在上面加载的js -->
+    <script>
+  function loadScript(src, cb) {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        if (cb) {
+          if (JSON.stringify(cb)) {
+            for (let p in cb) {
+              if (p == "onload") {
+                script[p] = () => {
+                  cb[p]()
+                  resolve()
+                }
+              } else {
+                script[p] = cb[p]
+                script.onload = resolve
+              }
+            }
+          } else {
+            script.onload = () => {
+              cb()
+              resolve()
+            };
+          }
+        } else {
+          script.onload = resolve
+        }
+        script.setAttribute("src", src);
+        HEAD.appendChild(script);
+      });
+    });
+  }
+
+  //https://github.com/filamentgroup/loadCSS
+  var loadCSS = function (src) {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = src;
+        link.onload = resolve;
+        document.getElementsByTagName("head")[0].appendChild(link);
+      });
+    });
+  };
+
+</script> 
+
+<!-- 轮播图所需要的js -->
+<script src="/js/swiper/swiper.min.js"></script>
+<script src="/js/swiper/vue-awesome-swiper.js"></script>
+<script src="/js/swiper/swiper.animate1.0.3.min.js"></script>
+
+<script type="text/javascript">
+  Vue.use(window.VueAwesomeSwiper)
+</script>
+
+
+  <script src="/js/vue-typed-js/index.js"></script>
+
+
+<!-- 首页的公告滚动插件的js需要重新加载 -->
+<script src="/js/vue-seamless-scroll/index.js"></script>
+
+<!-- 打字机效果js -->
+<script src="https://unpkg.com/typed.js@2.0.11"></script>
+
+
+    <div id="safearea">
+      <main class="main" id="pjax-container">
+        <!-- 头部导航 -->
+        
+<header class="header  " 
+  id="navHeader"
+  style="position: fixed;
+  left: 0; top: 0; z-index: 10;width: 100%;"
+>
+  <div class="header-content">
+    <div class="bars">
+      <div id="appDrawer" class="sidebar-image">
+  <div class="drawer-box-icon">
+    <i class="fas fa-bars" aria-hidden="true" @click="showDialogDrawer"></i>
+  </div>
+  
+  <transition name="fade">
+    <div class="drawer-box_mask" v-cloak style="display: none;" v-show="visible" @click.self="cancelDialogDrawer">
+    </div>
+  </transition>
+  <div class="drawer-box" :class="{'active': visible}">
+    <div class="drawer-box-head bg-color">
+      <img class="drawer-box-head_logo lazyload placeholder" src="/medias/icons/sanye.jpg" class="lazyload placeholder" data-srcset="/medias/icons/sanye.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+      <h3 class="drawer-box-head_title">Souther Blog</h3>
+      <h5 class="drawer-box-head_desc"></h5>
+    </div>
+    
+    <div class="drawer-box-content">
+      <ul class="drawer-box-content_menu">
+        
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/archives" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/tags" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(3)">
+                  <span>
+                    
+                    <span class="name">更多</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(3)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(3)">
+                  
+                  <li>
+                    <a href="/about">
+                      
+                      <i class="fa fa-address-card" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <i class="fa fa-camera" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friends">
+                      
+                      <i class="fa fa-users" style="margin-top: -20px;"></i>
+                      
+                      <span>友情链接</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDrawer',
+    data: {
+      visible: false,
+      top: 0,
+      openArr: [],
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      isOpen(index) {
+        if (this.openArr.includes(index)) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      openOrCloseMenu(curIndex) {
+        const index = this.openArr.indexOf(curIndex);
+        if (index !== -1) {
+          this.openArr.splice(index, 1);
+        } else {
+          this.openArr.push(curIndex);
+        }
+      },
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%;overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      }
+    },
+    created() {}
+  })
+</script>
+
+    </div>
+    <div class="blog-title" id="author-avatar">
+      
+        <div class="avatar">
+          <img src="/medias/icons/sanye.jpg" class="lazyload placeholder" data-srcset="/medias/icons/sanye.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+        </div>
+      
+      <a href="/" class="logo">Souther Blog</a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/" class="menu-item-link" title="首页">
+                  
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/archives" class="menu-item-link" title="归档">
+                  
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/tags" class="menu-item-link" title="标签">
+                  
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="更多">
+                  
+                  <span class="name">更多</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/about">
+                      
+                      <i class="fa fa-address-card" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/gallery">
+                      
+                      <i class="fa fa-camera" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friends">
+                      
+                      <i class="fa fa-users" style="margin-top: -20px;"></i>
+                      
+                      <span>友情链接</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+        
+      </ul>
+      
+      
+        <div id="appSearch">
+  <div class="search"  @click="showDialog()"><i class="fas fa-search" aria-hidden="true"></i></div>
+  <transition name="fade">
+    <div class="message-box_wrapper" style="display: none;" v-cloak v-show="dialogVisible" @click.self="cancelDialogVisible()">
+      <div class="message-box animated bounceInDown">
+        <h2>
+          <span>
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <span class="title">本地搜索</span>
+          </span>
+          <i class="fas fa-times close" pointer style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i>
+        </h2>
+        <form class="site-search-form">
+          <input type="text"
+            placeholder="请输入关键字"
+            id="local-search-input" 
+            @click="getSearchFile()"
+            class="st-search-input"
+            v-model="searchInput"
+          />
+        </form>
+        <div class="result-wrapper">
+          <div id="local-search-result" class="local-search-result-cls"></div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+<script src="/js/local_search.js"></script>
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appSearch',
+    data: {
+      dialogVisible: false,
+      searchInput: '',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+      window.addEventListener('pjax:complete', () => {
+        this.cancelDialogVisible();
+      })
+    },
+    methods: {
+      showDialog() {
+        this.dialogVisible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'overflow: hidden;';
+      },
+      getSearchFile() {
+        if (!this.searchInput) {
+          getSearchFile("/search.xml");
+        }
+      },
+      cancelDialogVisible() {
+        this.dialogVisible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+    },
+    created() {}
+  })
+</script>
+<!-- 解决刷新页面闪烁问题，可以在元素上添加display: none, 或者用vue.extend方法，详情：https://blog.csdn.net/qq_31393401/article/details/81017912 -->
+<!-- 下面是搜索基本写法 -->
+<!-- <script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+</script> -->
+
+      
+
+    </nav>
+  </div>
+  
+  
+</header>
+        <!-- 内容区域 -->
+        
+<!-- prismjs 代码高亮 -->
+
+
+
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+
+  <!-- 文章详情页顶部图片和标题 -->
+
+
+
+
+<div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;background-image:url('https://pic3.zhimg.com/80/v2-e5c15010b8ba4608a1974403a02a2da0_1440w.webp')">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
+  
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        随笔日志
+      </span>
+    </div>
+    
+    
+      
+        <span class="post-detail-header_date">
+          <i class="fas fa-calendar"></i> 发表于：2021-03-25 |
+        </span>
+      
+
+      
+
+      
+        <div class="post-detail-header_wordcount">
+          <span class="totalcount">
+            <i class="fas fa-file-text-o"></i> 字数统计: 5.2k |
+          </span>
+  
+          <span class="min2read">
+            <i class="fas fa-clock"></i> 阅读时长: 18分钟 |
+          </span>
+  
+          
+            <span class="reading">
+              <i class="fas fa-eye"></i> 阅读量：<span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+        </div>
+      
+    
+  </div>
+  
+  
+    <script defer src="/js/bubble/bubble.js"></script>
+  
+</div>
+
+
+
+
+
+<div class="post-detail-content post-row" 
+  style="padding-top: 0px;">
+  <div class="main-content">
+    <article class="post post-detail">
+      <div class="post-content">
+        <h1 id="2024"><a href="#2024" class="headerlink" title="2024"></a>2024</h1><h2 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h2><ol>
+<li>成功入伍；</li>
+</ol>
+<h2 id="日志："><a href="#日志：" class="headerlink" title="日志："></a>日志：</h2><h3 id="7月："><a href="#7月：" class="headerlink" title="7月："></a>7月：</h3><h1 id="2023"><a href="#2023" class="headerlink" title="2023"></a>2023</h1><h2 id="目标：-1"><a href="#目标：-1" class="headerlink" title="目标："></a>目标：</h2><p>1：学习LVGL（制作<a target="_blank" rel="noopener" href="https://www.xutoubee.cn/">espMointor_plus</a>;墨水屏气象站，了解GUI的制作和相关程序编写）</p>
+<p>2：学习C++&amp;C#</p>
+<h2 id="日志：-1"><a href="#日志：-1" class="headerlink" title="日志："></a>日志：</h2><h2 id="9月："><a href="#9月：" class="headerlink" title="9月："></a>9月：</h2><p><strong>1日：</strong>[ —[——基于STM32MP157开发板 文档 (embedfire.com)]</p>
+<ol>
+<li>cubemx &amp;HAL（<a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/98845509">【STM32】系统时钟RCC详解(超详细，超全面)_rcc时钟_Z小旋的博客-CSDN博客</a>）</li>
+</ol>
+<p>学习系列，<a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/98885316">【STM32】STM32 CubeMx </a>， <a target="_blank" rel="noopener" href="https://doc.embedfire.com/linux/stm32mp1/hal/zh/latest/doc/chapter41/chapter41.html">将STM32CubeIDE工程转为keil MDK工程</a>;</p>
+<ol start="2">
+<li>J-FLASH查看数据（安装目录下有很多小工具）</li>
+</ol>
+<h3 id="8月："><a href="#8月：" class="headerlink" title="8月："></a>8月：</h3><p><strong>31日：</strong></p>
+<ol>
+<li>掉电重启参数CRC校验失败-&gt;可能是bootloader里的影响，（改为从0x0800 0000启动，大小0x4000）；</li>
+<li>基站设置画面：添加基站；</li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/pertor/p/9484663.html">STM32学习笔记：读写内部Flash（介绍+附代码） </a></li>
+</ol>
+<p><strong>30日：</strong></p>
+<ol>
+<li>安装产测工具：找不到msvcp120dll无法继续运行-&gt;win+r-&gt;cmd-&gt;scf&#x2F;scannow-&gt;重启（未解决）；</li>
+<li>RDSS的zigbee页面：</li>
+</ol>
+<blockquote>
+<p>①切换到zigbee设置画面，文本框显示zigbee参数（不用批量更新）（else if互斥）</p>
+<p>②点击对应文本框，弹出自定义键盘，并且键盘文本框显示此时的参数，通过键盘修改后按go键显示在zigbee参数文本框，若按退出键盘页面不修改内容，最后点击confirm按键提交zigbee参数设置</p>
+<p>③仿照系统自带键盘，使用lua脚本通过只操作串口屏实现自定义键盘（按键通知改为仅按下时，否则如果定义为切换画面，先切画面，再发送按钮通知）</p>
+<p><strong>strtoul()</strong> 会扫描参数nptr 字符串，跳过前面的空白字符（例如空格，tab缩进等，可以通过 isspace() 函数来检测），直到遇上数字或正负符号才开始做转换，再遇到非数字或字符串结束时(‘\0’)结束转换，并将结果返回；</p>
+</blockquote>
+<ol start="3">
+<li>CRC校验：Cyclic Redundancy Check</li>
+</ol>
+<p><strong>17日：</strong></p>
+<p>大彩：控件：</p>
+<blockquote>
+<p><strong>滑动选择</strong>控件（滑动选择、状态选择）;</p>
+<p><strong>滑块</strong>控件（item代表选项，如10；20；30…则item&#x3D;0代表选择第0项10）;</p>
+<p><strong>RTC</strong>控件；</p>
+<p><strong>GIF</strong>控件；</p>
+<p><strong>图标</strong>控件（按钮互斥：选中互斥的所有按钮-&gt;编辑-&gt;按钮互斥）；</p>
+<p><strong>曲线</strong>控件（例如，把曲线宽度设置为480像素，采样点数设置为480个，1个像素点对应1个曲线采样数据。那么整个宽度的曲线显示完毕正好需要480个数据，当481个数据到来的时候，更新FIFO数据，曲线向右平移显示。如果曲线宽度为200像素，采样点数为201，整个控件宽度只能显示200个采样点，那么第201个曲线的数据点到来的时候屏幕上显示的曲线就会开始向右平移显示）；</p>
+<p><strong>菜单</strong>控件；</p>
+<p><strong>二维码</strong>控件；</p>
+<p><strong>数据记录</strong>控件；</p>
+<p><strong>历史曲线</strong>控件;</p>
+<blockquote>
+<p>数据记录控件与历史曲线共用存储块在128K flash里面，开启数据存储时，应设置存储地址</p>
+<p>数据存储地址计算：</p>
+<p>数据控件存储大小 &#x3D; 最大记录数*单条记录大小+24 （单位：字节）</p>
+<p>历史曲线存储大小 &#x3D; 通道个数*采样点数+30 （单位： 字节）</p>
+</blockquote>
+<p><strong>圆形进度条</strong>控件：LUA脚本关联圆形进度条与文本框（代替MCU下发指令，串口屏内部直接回调控制）；</p>
+<p><strong>旋转控件</strong>： （可实现仪表效果）；</p>
+<p><strong>基本图形</strong>控件，<strong>视频</strong>控件，<strong>AV输入</strong>控件 </p>
+</blockquote>
+<p><strong>16日：</strong></p>
+<ol>
+<li>看大彩官网开发文档，visualTFT、keil与虚拟串口屏调试，MCU程序处理框架；</li>
+<li>文件系统-&gt;FATFS；</li>
+<li>IAP（In-Application Programming”），ICP（In-Application Programming），ISP: Bootloader；</li>
+<li>uc-osll</li>
+</ol>
+<h1 id="2022"><a href="#2022" class="headerlink" title="2022"></a>2022</h1><h2 id="目标：-2"><a href="#目标：-2" class="headerlink" title="目标："></a>目标：</h2><p>考研上岸！！！×</p>
+<h2 id="日志：-2"><a href="#日志：-2" class="headerlink" title="日志："></a>日志：</h2><h3 id="11月："><a href="#11月：" class="headerlink" title="11月："></a>11月：</h3><p><strong>5日：</strong>毕设选题了关于无人机跟踪识别的，大概了解了下，开了一篇博客帖子积累素材，差不多了，要收收心，现在不要太关注这个，全身心投入考研，还有48天，加油！</p>
+<h3 id="10月："><a href="#10月：" class="headerlink" title="10月："></a>10月：</h3><p><strong>26日：</strong><a target="_blank" rel="noopener" href="https://www.jb51.net/softjc/842790.html">ToDesk如何打开音频播放</a>  <a target="_blank" rel="noopener" href="https://www.somode.com/course/7896.html">找不到文件gpedit.msc怎么办详细介绍</a></p>
+<p><strong>25日：</strong><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/5e38fa61ea29?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes">使用Atom打造无懈可击的Markdown编辑器</a> 图床出了点问题，考虑后续换</p>
+<p><strong>17~20日：</strong>认识实习：eNSP网络仿真（网络设施配置相关、ping、PC通信、VLAN、IP、mac、子网掩码与IP相与，网关、路由，(教程：B站：众元助教元元)、抓包软件wireshark、RRT、BBT、吸顶天线、子网，网元）（交换机好像不是太高深的东西，不是很贵，家用的几十块钱，像HUB集线器一样）</p>
+<p><strong>11~15日：</strong>金工实习：激光雕刻机可以搞一下；（3B代码，数控G代码）</p>
+<h3 id="9月：-1"><a href="#9月：-1" class="headerlink" title="9月："></a>9月：</h3><p><strong>16日：</strong><a target="_blank" rel="noopener" href="http://t.zoukankan.com/qsyll0916-p-7788475.html">关于串口通信波特率的几点思考</a></p>
+<h3 id="6月："><a href="#6月：" class="headerlink" title="6月："></a>6月：</h3><p><strong>15日：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44907926/article/details/118585030?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165526055716781818777291%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165526055716781818777291&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-118585030-null-null.142%5Ev16%5Epc_search_result_control_group,157%5Ev14%5Enew_3&utm_term=%E7%88%AC%E8%99%AB&spm=1018.2226.3001.4187">一篇万字博文带你入坑爬虫这条不归路 【万字图文】</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_52122271/article/details/120718703?spm=1001.2014.3001.5501">Flask框架——第一个Flask程序</a></p>
+<h3 id="4月："><a href="#4月：" class="headerlink" title="4月："></a>4月：</h3><p><strong>9日：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/zs1342084776/article/details/88701261">MYSQL WorkBench使用教程</a></p>
+<p><strong>8日：</strong><a target="_blank" rel="noopener" href="https://rossning92.github.io/pid-simulation/">PID在线直观感受</a></p>
+<h3 id="3月："><a href="#3月：" class="headerlink" title="3月："></a>3月：</h3><p><strong>20日：</strong><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/2625.html">MySQL WorkBench使用教程</a></p>
+<p><strong>9日：</strong><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xuexianqi/p/12795890.html">MySQL安装教程</a></p>
+<h3 id="2月："><a href="#2月：" class="headerlink" title="2月："></a>2月：</h3><p><strong>8日：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/sysjtlwx/article/details/73824903">[Arduino]烧写Arduino BootLoader的几种方法</a></p>
+<h1 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h1><h2 id="目标：-3"><a href="#目标：-3" class="headerlink" title="目标："></a>目标：</h2><h2 id="日志：-3"><a href="#日志：-3" class="headerlink" title="日志："></a>日志：</h2><h3 id="10月：-1"><a href="#10月：-1" class="headerlink" title="10月："></a>10月：</h3><p><strong>5日：</strong>开始新一阶段的学习</p>
+<h3 id="8月：-1"><a href="#8月：-1" class="headerlink" title="8月："></a>8月：</h3><p><strong>8日：</strong>系统学习8266系列模组，了解相关网络协议（淘了一把pocker2键盘，修了修，准备换ipad的触摸总成，了解了一些邮票的知识，买了一个集邮册，准备收集着玩）</p>
+<h3 id="7月：-1"><a href="#7月：-1" class="headerlink" title="7月："></a>7月：</h3><p><strong>29日：</strong>做墨水屏气象站，翻新了一下博客</p>
+<p><strong>26日：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_45040529/article/details/109254507">Arduino文件梳理</a></p>
+<p><strong>25日：</strong> 研究esp8266驱动墨水屏，手上的8266应该是重复刷固件了，导致出错，参考网上教程使用Python2安装esptool进行固件擦除，正好看一下python知识，接下来准备用8266获取相关网络信息，并进行墨水屏GUI设计，为墨水屏天气站做准备。</p>
+<p><strong>22日：</strong> 飞机飞丢了。正好开始做些正事。树莓派图传做出来了，效果很好，是摄像头的问题。在看微雪的墨水屏资料。<br><strong>21日：</strong> 准备做墨水屏天气站，尝试用VScode。</p>
+<p><strong>20日：</strong>一直在玩航模，树莓派图传发射端遇到点问题，应是没有识别出摄像头，重新买了一个，还没到，不能在这方面花太多时间了，要开始学习了，有点缺少方向。</p>
+<p><strong>5~7日：</strong> 看了一下实验室的3D打印机，拆开来修了一下，然后打印东西，不太好用。</p>
+<p><strong>4日：</strong> 找点零件凑了一架F330四轴。</p>
+<p><strong>3日：</strong>考试基本都完了，还差一个12号的大跨。一到放假，手又痒了，想玩航模了。看到了OpenHD树莓派图传方案（最远70公里），要入坑了，在学校调好后回去玩远航FPV。还有就是墨水屏天气站，修一下实验室的3D打印机。</p>
+<h3 id="6月：-1"><a href="#6月：-1" class="headerlink" title="6月："></a>6月：</h3><p><strong>26日：</strong>  复习信号与系统，要加快进度了，还要带着复习信息论，抽空看了一下示波器的FFT运算功能，准备结合信号与系统的复习了解一下正点原子小示波器的这项功能使用。</p>
+<p><strong>25日：</strong>大概了解了一下光耦，没仔细看完。了解了一下实验室那台3D打印机，考完试拆开来看看，打印点东西，感觉不错。</p>
+<p><strong>24日：</strong>了解了一下电荷泵的原理，可以升压，产生负压。</p>
+<p><strong>23日：</strong>复习信号与系统，上课走神，感觉复习的不在状态，实验室原来的桌子搬到了毕业学长的桌子上，感觉还好（我比较容易受外界环境的影响），（大四毕业了，看着他们拖着行李走出校园，不难想到两年后的自己会是什么样的）晚上听了一个信息工程大学的研究生招生宣讲，加上这几天的不在状态，感觉很迷茫，迷茫中又感觉，从现在开始该做些什么了，该做出一些改变了，该思考一下未来的发展规划了。尝试在实验室里静下心来学习</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/Ru4DsS"><img src="https://z3.ax1x.com/2021/06/23/Ru4DsS.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/23/Ru4DsS.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="Ru4DsS.md.jpg"></a></p>
+<p>快放暑假了，估计会留校，心里又想留校又想回家，最好的是，先留校，趁着有时间多学点东西，然后电赛后的剩余时间回趟家。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/Ru5Cod"><img src="https://z3.ax1x.com/2021/06/23/Ru5Cod.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/23/Ru5Cod.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="Ru5Cod.md.jpg"></a></p>
+<p>（按照学长的建议，暑假应该找点时间考虑考研考哪所学校了，要有一个目标）</p>
+<p><strong>22日：</strong>NFC卡的元件都到了，焊接了一下，风枪从板子底下加热的，类似于回流焊，配上自己买的锡膏和洗板水，用的很顺手，很成功，第一次焊接这种精密的板子，做了四块，自己留了一块，其余送人了，挺好的。（正点原子的示波器DS100也到了，感觉很好，今后会很方便的）</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/RuhwB4"><img src="https://z3.ax1x.com/2021/06/23/RuhwB4.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/23/RuhwB4.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="RuhwB4.md.jpg"></a></p>
+<p><strong>21日：</strong> 上课，上课，发呆，发呆。。。</p>
+<p><strong>20日：</strong>白天主要帮同学做数电课设了（太浪费时间了。。），今天突发奇想，把很老的（2013年的）TI G2口袋实验板子资料翻了翻，感觉设计的不错，正好也回顾了下寒假学的MSP430，接下来也可以带着学下去，单片机都是通用的，换汤不换药，还是以一个板子为主，学内在的技术。总感觉不能这样下去了，得要有些改变了，对未来又有点小迷茫了。明天一定要开始复习信号与系统了。</p>
+<p><strong>19日：</strong>数电课设完成了，白天主要帮同学解决课设的一些问题，昨天晚上辗转反侧，趁着618买了正点原子的迷你示波器DS100，挺好的，以后用着也方便，就是这个月得吃土了。。。晚上没什么事干，看了一下别人用32制作示波器的开源方案，感觉都不太好，然后收拾了一下各种元件，然后趁着熄灯前把51的AD转换学完了，完善了之前的博客内容。明天得把信号与系统实验完善一下了（明天最后一节课了），然后开始信号与系统的复习了。下下周三期末，还什么都不太懂。。。</p>
+<p><strong>18日：</strong>今天把数电课设做完了（数字频率计），明天去答辩，接下来会学些新知识，顺带着玩一些开源项目（今天618，买了点东西）</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/R9YVUA"><img src="https://z3.ax1x.com/2021/06/18/R9YVUA.md.png" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/18/R9YVUA.md.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="R9YVUA.md.png"></a></p>
+<p><strong>15日：</strong>看到B站有个做NFC卡片的，挺好看的，改了一下，发到嘉立创打样了，元件也买了点（实际焊盘应该是银色的，不知道好不好看，金色的太贵了）</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/R9JUne"><img src="https://z3.ax1x.com/2021/06/18/R9JUne.md.png" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/18/R9JUne.md.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="R9JUne.md.png" style="zoom: 50%;" /></a><a target="_blank" rel="noopener" href="https://imgtu.com/i/R9Js9P"><img src="https://z3.ax1x.com/2021/06/18/R9Js9P.md.png" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/18/R9Js9P.md.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="R9Js9P.md.png" style="zoom:50%;" /></a></p>
+<p>2021.6.13：数电复习了一周，考完了，准备复习剩下的几门课。这几天把树莓派搭建服务器看一下。树莓派使用3.5寸TFT屏幕与HDMI交互使用：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/67f593706e15">树莓派安装3.5寸屏幕驱动</a> <a target="_blank" rel="noopener" href="https://blog.csdn.net/Link2Points/article/details/113002383">树莓派4b3.5inch显示屏+远程+FTP+建站</a> （屏幕切换之间遇到点小问题，加装屏幕后影响散热1.需要先开启root权限sudo passwd root &#x2F;&#x2F;设置root密码su root&#x2F;&#x2F;切到root用户，输入密码2.进入boot ：cd boot（1：cd LCD-show&#x2F;   2：.&#x2F;LCD-hdmi    .&#x2F;LCD35-show）</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/27VTPJ"><img src="https://z3.ax1x.com/2021/06/14/27VTPJ.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/14/27VTPJ.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="27VTPJ.md.jpg" /></a></p>
+<p><strong>5日：</strong>板子到了，焊接了一下，锡膏不太好用，芯片忘供电了，最终制作出来一张完整的板子</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2I7kTJ"><img src="https://z3.ax1x.com/2021/06/13/2I7kTJ.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/06/13/2I7kTJ.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="2I7kTJ.md.jpg" /></a></p>
+<p><strong>3日：</strong>课设弄完了，得好好复习了。</p>
+<h3 id="5月："><a href="#5月：" class="headerlink" title="5月："></a>5月：</h3><p><strong>30日：</strong>画了一个usb2.0集线器PCB，用嘉立创打板了，元件也买了。</p>
+<p><strong>29日：</strong>接下来主要还是学习，又快要考试了。其次就是一些还没跳的坑：</p>
+<ol>
+<li><p>51单片机继续学习（现在到AD部分了）。</p>
+</li>
+<li><p>通信课设继续完善，尽量把小程序做出来，通过一套完整的开发流程增加开发经验（还有就是室友和同学的课设，带着完善。还有就是以后要学会拒绝别人，不能什么事都揽到自己身上）。</p>
+</li>
+<li><p>自己做一个USB集线器，从电路PCB到元件采买，焊接，到制作外壳，学会使用3D打印机，学几项新技能，通过项目充实自己。</p>
+</li>
+<li><p>买了3块墨水屏，有时间研究研究显示部分，然后准备制作WIFI气象站，尽量想B站大佬做出那种带QQ信息显示的部分，做好后尽量也画个外壳，尽量再暑假结束前做出来。</p>
+</li>
+<li><p>想趁着618改改键盘，主要换键帽，改键线分离，可以的话准备再加个白灯或者蓝灯。</p>
+</li>
+<li><p>树莓派，近期还没想好怎么玩，想想吧。</p>
+</li>
+<li><p>做一个简易的小电源，以后用着方便。</p>
+</li>
+<li><p>对了，可见光通信，有机会搞搞。</p>
+<p>以上都是想做的，但我这个性格估计能做出来一半就不错了，仅供提醒自己一下吧，防止忘记</p>
+</li>
+</ol>
+<p>近期，就这样，还有的就想不起来了。对了，还有就是认真学习，认真生活。</p>
+<p><strong>28日：</strong>去看一下哆啦A梦 伴我同行2</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2iNnX9"><img src="https://z3.ax1x.com/2021/05/27/2iNnX9.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/05/27/2iNnX9.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="2iNnX9.md.jpg" style="zoom:200%;" /></a></p>
+<p><strong>25~27日：</strong>主要把入党那些材料弄了一下</p>
+<p><strong>23日：</strong>考完电磁场了，题目还是挺难的，但感觉还是复习的不到位，我觉得有些题是可以通过复习做出来的，还是自己没有平衡好电赛和学习之间的关系，捡了芝麻丢了西瓜，到最后芝麻都可能丢了，希望电磁场不要挂….今后要把学习放在首要地位，要平衡好学习与爱好之间的关系，这次算是一个教训吧。其实也想了很多，想到了以后的事，学习还是特别重要的，至少在现阶段是这样的。考完电磁场和室友出去吃了一顿，好好放松了一下，喝了两瓶啤酒，感觉还行，回宿舍后，另外两个室友带了六瓶江小白，又是一顿，喝完还不够，一人又来了半瓶牛栏山，我是从来没喝过那么多酒啊，感觉还将就，一般般吧，就是第二天脑袋疼，东北人是真能喝啊，下次注意，不能再这样喝下去了。</p>
+<p><strong>10~21日：</strong>校电赛</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2itFRe"><img src="https://z3.ax1x.com/2021/05/27/2itFRe.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/05/27/2itFRe.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="2itFRe.md.jpg" style="zoom: 150%;" /></a></p>
+<p>选的B题，看着简单，做起来是真难啊。。。关键还在电磁场要考试期间，搞得我都迈不开步子去做，只能白天复习，晚上做，</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2it8Mj"><img src="https://z3.ax1x.com/2021/05/27/2it8Mj.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/05/27/2it8Mj.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="2it8Mj.md.jpg" style="zoom:150%;" /></a>其实白天脑子里也在想着电赛，让我很难受。</p>
+<p>​	这次电赛的可见光通信是非常值得研究的，我觉得很有意义，看来两篇毕设论文，理论上实现还是比较容易的，但现实做起来不太容易，和元件特性关系很大，小功率LED下可以实现比较稳定一点的信息传输，但是换成自己做的12V大功率驱动板就不太好用了，干扰很大，不光是自然光影响，还和驱动部分的稳定性有关，这一部分卡了四天，最终不得不放弃了，离考试还剩两天了，还没开始复习….</p>
+<p>推荐一下别人做的可见光通信部分，做的挺好：<a target="_blank" rel="noopener" href="https://blog.csdn.net/fengge2018/article/details/108301334?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162212383916780271591917%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162212383916780271591917&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-108301334.first_rank_v2_pc_rank_v29&utm_term=%E5%8F%AF%E8%A7%81%E5%85%89%E9%80%9A%E4%BF%A1&spm=1018.2226.3001.4187">可见光通信</a></p>
+<p>后续还会继续搞搞的。今天刚出电赛结果，优秀奖（没办法，谁叫我优秀呢。报销泡汤了，得自己还花呗了。。。）</p>
+<p>对了，HELLO,2021 TI.</p>
+<p><strong>2~5日：</strong>将通信课设（智能温室大棚）完善了一下，具体功能已实现，暂时没有做用户端界面（准备用微信小程序做一个）。采用中国移动onenet-MQTT开源代码+正点原子相关例程，用的是emqx免费的服务器（晚上的时候特别不稳定，调不出来，白天一调就好了，说到底还是免费的）</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2iY4rn"><img src="https://z3.ax1x.com/2021/05/27/2iY4rn.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/05/27/2iY4rn.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="2iY4rn.md.jpg"  /></a></p>
+<p>另外帮几个同学也做了4份课设，51，32，arduino, esp01s都有的，主要用到了点灯科技的开发文档，挺好用的，也是免费的，也可以连接小爱同学。51那块串口通信具体看了一下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">uart_init</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	TMOD=<span class="number">0x20</span>;<span class="comment">//即0010 0000,定时器/计数器1,工作方式2</span></span><br><span class="line">	TH1=<span class="number">0xfd</span>;<span class="comment">//设置波特率为9600</span></span><br><span class="line">	TL1=<span class="number">0xfd</span>;</span><br><span class="line">	TR1=<span class="number">1</span>;<span class="comment">//启动定时器/计数器1</span></span><br><span class="line">	</span><br><span class="line">	SCON=<span class="number">0x50</span>; <span class="comment">//0101 0000.串口工作方式1，允许串行控制</span></span><br><span class="line">	PCON=<span class="number">0x00</span>;<span class="comment">//设置SMOD=0</span></span><br><span class="line">	IE=<span class="number">0x90</span>; <span class="comment">//CPU允许中断，串行允许中断</span></span><br><span class="line">	</span><br><span class="line">	TI=<span class="number">1</span>;<span class="comment">//直接使用printf必须加入此句才能实现发送</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>1日：</strong><img src="https://z3.ax1x.com/2021/05/27/2iJOBt.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/05/27/2iJOBt.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="2iJOBt.md.jpg"  /></p>
+<h3 id="4月：-1"><a href="#4月：-1" class="headerlink" title="4月："></a>4月：</h3><p><strong>21日：</strong>最近状态有点不太好，上课心不在焉，感觉人变懒了，不过现在调整的还可以了，要静下心来，好好学习了，突然发现，我几乎没有把平时时间用在专业课学习上，一直混混沌沌的，最近也没有什么要做的事，所以感觉很“闲”，其实还有很多事没做。得好好复习专业课了，现在有的东西还一头雾水（上课时听一点，下课就扔一边了），不能再像以前等到期末再复习了。还有就是兴趣爱好，近期就是把通信课设好好弄一下（带着队友从头开始，这样也能多学一点），顺带着学51（学长建议看32，后期调整一下）。树莓派也买了，到了之后就先当一个小电脑玩玩吧，以后有需要再进一步学习（我觉得以后一定会用到的）（我总是对自己的直觉异常的自信  &gt;&lt;    。。。）额。。。虽然想的很多，还是得脚踏实地啊。还有就是我感觉哈尔滨的春天（也许是夏天）已经到了，傍晚的夕阳还有喷气式飞机的航迹线真的太美了，吃过饭去散步一定很舒服，虽然没去过。。。（我得看看这个博客怎么发表情，要不体现不了我的心情。。。只能省略号代替了）近期的话，就这样，挺好…</p>
+<p>PS: 一首好听的歌：<a target="_blank" rel="noopener" href="http://music.163.com/song?id=29375057&userid=2045942784">http://music.163.com/song?id=29375057&amp;userid=2045942784</a></p>
+<img src="https://z3.ax1x.com/2021/04/09/cUYMjS.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/04/09/cUYMjS.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="cUYMjS.md.jpg" style="zoom: 200%;" />
+
+<h1 id="站点日志"><a href="#站点日志" class="headerlink" title="站点日志"></a>站点日志</h1><p>2024.7.19：重建博客；</p>
+<p>2021.8.25：替换了所有文章的封面图片，更有识别性。</p>
+<p>2021.8.3：博客整体弄完了，接下来就是优化速度和专注学习写博客了。折腾了几天发现我对博客这东西有了更深入的认识，自己还不太好说，来自黑石博客的一位博友说：“Wordpress,hexo都是很不错的博客系统，我觉得虽然现在短视频非常流行，但是要想把学到的知识和技能形成自己真正的能力，减少碎片化信息对大脑的刺激，就必须在一个相对安静的环境中学习。而博客这样的平台可以很好的记录自己的所思所想，也能够形成系统的知识体系。同时，写博客也是不断加深自己对知识理解的程度，有句话说的好：“如果你在学习一项新知识或新技能的同时考虑如何将其教给他人，你吸收内化知识的速度将比你仅仅作为一个学习者要快得多。快速掌握新知识、新技能的方法之一就是学完以后立刻与他人分享。”从这个意义讲，学习——&gt;分享——&gt;反馈——&gt;再学习——&gt;再分享——&gt;再反馈这样一种学习模式，在博客这里就可以很好的体现，我觉得这也是博客的价值所在。许多有价值的问题和回答都是通过博客进行了详细而清楚的说明，所以获取问题答案最快最有效的办法就是看博客。<br>看了网站主人的博客，感触颇深，结合自己也在自学这方面的知识，发表下对博客的一些看法。相互学习，共同进步！”我觉得就是这个意思，接下来更深入的投入学习吧。</p>
+<p> 2021.7.29：整体翻新博客，采用matery主题。</p>
+<p>2021.4.11:新增并完善看板娘功能（看板娘首次登录为默认，可自行切换不同人物，下次打开即为最后一次切换的人物）。</p>
+<p>2021.5.25：新增鼠标点击特效（额外配置时导致文件未备份，中间出了一点小差错，导致网页打开速度慢了一些）。</p>
+<p>2021.5.27：尝试加快网页访问速度（使用hexo-all-minifier，压缩）。</p>
+<p>2021.5.29：配置Markdown语法公式块与Hexo兼容。<a target="_blank" rel="noopener" href="https://www.dazhuanlan.com/2020/06/09/5edf70eb9e803/">https://www.dazhuanlan.com/2020/06/09/5edf70eb9e803/</a></p>
+<p>2021.5.31：根据日期top值设定置顶日志，添加左侧Music博客主题音乐。</p>
+<p>2021.6.3:发布一篇新博客2021.6.3。</p>
+
+      </div>
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E7%94%9F%E6%B4%BB/" class="">
+              生活
+            </a>
+          
+        </div>
+        
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>旧时南风</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/2021/03/25/sui-bi-ri-zhi/" target="_blank" title="随笔日志">http://former-south-wind.github.io/2021/03/25/sui-bi-ri-zhi/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="https://z3.ax1x.com/2021/03/29/c9Ex1I.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/03/29/c9Ex1I.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+    </div>
+    <a href="/2021/03/28/2021-nian-rm-ji-jia-da-shi-gao-xiao-lian-meng-sai/" class="post-nav-link">
+      <div class="title">
+        <i class="fas fa-angle-left"></i> 上一篇:
+        <div class="title-text">2021年RM机甲大师高校联盟赛</div>
+      </div>
+      
+      <!-- <div class="content">
+        2021RM高校联盟赛落幕
+
+
+​	第一次正式跟着学长参加RM比赛，以前一直是通过视频了解RM的，第一次近距离的接触，确
+      </div> -->
+    </a>
+  </div>
+
+
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+      <div id="appDonate" class="post-donate">
+  <div id="donate_board" class="donate_bar center" ref="donate">
+    <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏" @click="showDialogDrawer()"></a>
+  </div>
+  <transition name="fade">
+    <div 
+      class="donate-box-mask"
+      v-cloak 
+      v-show="visible"
+      @click="cancelDialogDrawer()"
+    >
+    </div>
+  </transition>
+  <transition name="bounce">
+    <div class="donate-box" v-cloak v-show="visible">
+      <div class="donate-box_close">
+        <i class="fas fa-times" aria-hidden="true" @click="cancelDialogDrawer" pointer></i>
+      </div>
+      <div class="donate-box_title">
+        <h4>
+          你的赏识是我前进的动力
+        </h4>
+      </div>
+      <div class="donate-box_tab">
+        <div class="Alipay" pointer :class="{'active': tabActive === 'Alipay'}" @click="changeTabActive('Alipay')">
+          支付宝
+        </div>
+        <div class="WeChatpay" pointer :class="{'active': tabActive === 'WeChatpay'}" @click="changeTabActive('WeChatpay')">
+          微信
+        </div>
+      </div>
+      <div class="donate-box_img">
+        <div class="AlipayImg" v-show="tabActive === 'Alipay'">
+          <img src="https://s21.ax1x.com/2024/07/19/pkozUOK.webp" class="lazyload placeholder" data-srcset="https://s21.ax1x.com/2024/07/19/pkozUOK.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="支付宝打赏" />
+        </div> 
+        <div class="WeChatpayImg" v-show="tabActive === 'WeChatpay'">
+          <img src="https://s21.ax1x.com/2024/07/19/pkozDFH.webp" class="lazyload placeholder" data-srcset="https://s21.ax1x.com/2024/07/19/pkozDFH.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="微信打赏" />
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDonate',
+    data: {
+      visible: false,
+      tabActive: 'Alipay',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        // function getScroll() {
+        //   return {
+        //     left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+        //     top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        //   };
+        // }
+        this.top = $(document).scrollTop() // or getScroll().top
+        // console.log('aa', $('.main-content'));
+        body.style.cssText = 'overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+      changeTabActive(name) {
+        this.tabActive = name;
+      }
+    },
+    created() {}
+  })
+</script>
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script defer src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
+
+  <div id="myComment">
+    
+      <div id="gitment-container"></div>
+
+    
+  </div>
+
+
+<!-- 还需要在后面这个地址里设置script, comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
+
+
+  </div>
+
+  <!-- 目录 -->
+  <aside id='l_side'>
+  
+    
+      <section class="widget side_blogger">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img src='/medias/icons/avatar.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>旧时南风</h2>
+        
+        
+          <p>保持热爱</p>
+
+        
+        
+          <p><span id="jinrishici-sentence">南风知我意，吹梦到西州</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="https://space.bilibili.com/456189645?spm_id_from=333.1007.0.0"
+              class="social fa fa-video flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:xuzhiweiro@163.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/former-south-wind"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=2926700458"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+    
+  
+  
+  
+
+  <div class="layout_sticky">    
+    
+      
+<section class="widget side_toc">
+  
+  <header>
+    
+      <i style="color: " class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name' style="color: ">本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="toc-main">
+      <div class="toc-content">
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2024"><span class="toc-text">2024</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%EF%BC%9A"><span class="toc-text">目标：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%EF%BC%9A"><span class="toc-text">日志：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E6%9C%88%EF%BC%9A"><span class="toc-text">7月：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2023"><span class="toc-text">2023</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%EF%BC%9A-1"><span class="toc-text">目标：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%EF%BC%9A-1"><span class="toc-text">日志：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E6%9C%88%EF%BC%9A"><span class="toc-text">9月：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E6%9C%88%EF%BC%9A"><span class="toc-text">8月：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2022"><span class="toc-text">2022</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%EF%BC%9A-2"><span class="toc-text">目标：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%EF%BC%9A-2"><span class="toc-text">日志：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#11%E6%9C%88%EF%BC%9A"><span class="toc-text">11月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E6%9C%88%EF%BC%9A"><span class="toc-text">10月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E6%9C%88%EF%BC%9A-1"><span class="toc-text">9月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E6%9C%88%EF%BC%9A"><span class="toc-text">6月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E6%9C%88%EF%BC%9A"><span class="toc-text">4月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E6%9C%88%EF%BC%9A"><span class="toc-text">3月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E6%9C%88%EF%BC%9A"><span class="toc-text">2月：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2021"><span class="toc-text">2021</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%EF%BC%9A-3"><span class="toc-text">目标：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%EF%BC%9A-3"><span class="toc-text">日志：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E6%9C%88%EF%BC%9A-1"><span class="toc-text">10月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E6%9C%88%EF%BC%9A-1"><span class="toc-text">8月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E6%9C%88%EF%BC%9A-1"><span class="toc-text">7月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E6%9C%88%EF%BC%9A-1"><span class="toc-text">6月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E6%9C%88%EF%BC%9A"><span class="toc-text">5月：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E6%9C%88%EF%BC%9A-1"><span class="toc-text">4月：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AB%99%E7%82%B9%E6%97%A5%E5%BF%97"><span class="toc-text">站点日志</span></a></li></ol> -->
+        <div class="toc"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 手机端目录按钮 -->
+<div id="toc-mobile-btn">
+  <i class="fas fa-list-ul" aria-hidden="true"></i>
+</div>
+
+      
+  <section class="widget side_recent_post">
+    
+  <header>
+    
+      <a style="color: " href='/tags/'><i class="fas fa-book fa-fw" aria-hidden="true"></i><span class='name'>最新文章</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      
+      <!-- hash算法 -->
+      
+      <div class="aside-list">
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2024/08/29/hello-world/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://picx.zhimg.com/80/v2-b44931ea513e5f7b3b06f2703f79653c_1440w.webp" class="lazyload placeholder" data-srcset="https://picx.zhimg.com/80/v2-b44931ea513e5f7b3b06f2703f79653c_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">08-29</span>
+                
+              </div>
+              <a class="post-title" href="/2024/08/29/hello-world/">Hello World</a>
+            </div>
+          </div>
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2024/07/23/git/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" class="lazyload placeholder" data-srcset="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">07-23</span>
+                
+              </div>
+              <a class="post-title" href="/2024/07/23/git/">Git</a>
+            </div>
+          </div>
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2024/07/19/ti-rtos/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" class="lazyload placeholder" data-srcset="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">07-19</span>
+                
+              </div>
+              <a class="post-title" href="/2024/07/19/ti-rtos/">TI-RTOS</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+    
+  </div>
+</aside>
+
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script defer src="/js/wrapImage.js"></script>
+</div>
+
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"
+	:style="{'background-color': bgColor ? bgColor : 'transparent'}">
+	<transition-group tag="ul" :name="names">
+		<li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+			<img :src="image" class="bg-swiper-img no-lazy">
+		</li>
+	</transition-group>
+</div>
+<script>
+	var vm = new Vue({
+		el: '#appBgSwiper',
+		data: {
+			names: '' || 'fade' || 'fade', // translate-fade fade
+			mark: 0,
+			img: [],
+			bgColor: '',
+			time: null
+		},
+		methods: {   //添加方法
+			change(i, m) {
+				if (i > m) {
+					// this.names = 'fade';
+				} else if (i < m) {
+					// this.names = 'fade';
+				} else {
+					return;
+				}
+				this.mark = i;
+			},
+			prev() {
+				// this.names = 'fade';
+				this.mark--;
+				if (this.mark === -1) {
+					this.mark = 3;
+					return
+				}
+			},
+			next() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			autoPlay() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			play() {
+				let bgImgDelay = '' || '180000'
+				let delay = parseInt(bgImgDelay) || 180000;
+				this.time = setInterval(this.autoPlay, delay);
+			},
+			enter() {
+				clearInterval(this.time);
+			},
+			leave() {
+				this.play();
+			}
+		},
+		created() {
+			this.play()
+		},
+		beforeDestroy() {
+			clearInterval(this.time);
+		},
+		mounted() {
+			let prop = '' || 'https://cdn.jsdelivr.net/gh/former-south-wind/picx-images-hosting@master/blog-pictures/5.86tj7kz28a.webp';
+			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
+			if (isImg) {
+				let img = prop.split(',');
+				let configRoot = '/'
+				let arrImg = [];
+				img.forEach(el => {
+					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+					var objExp = new RegExp(Expression);
+
+					if (objExp.test(el)) {
+						// http or https
+						arrImg.push(el);
+					} else {
+						// 非http or https开头
+						// 本地文件
+						let firstStr = el.charAt(0);
+						if (firstStr == '/') {
+							el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+						}
+						el = configRoot + el;
+						arrImg.push(el);
+					}
+				})
+				this.img = arrImg;
+			} else {
+				this.bgColor = prop;
+			}
+		}
+	})
+</script>
+
+<style>
+	.bg-swiper-box {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bg-swiper-img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+
+
+
+  <script>
+  function loadMermaid() {
+    if (document.getElementsByClassName('mermaid').length) {
+      if (window.mermaidJsLoad) mermaid.init()
+      else {
+        loadScript('https://unpkg.com/mermaid/dist/mermaid.min.js').then(() => {
+          window.mermaidJsLoad = true
+          mermaid.initialize({
+            theme: 'default',
+          })
+          if ('true') {
+            mermaid.init();
+          }
+        })
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMermaid();
+  })
+
+  document.addEventListener('pjax:complete', function () {
+    loadMermaid();
+  })
+  
+</script>
+
+
+      </main>
+    </div>
+
+    <!-- 页脚 -->
+    
+  
+  
+    <!-- 底部鱼儿跳动效果，依赖于jquery-->
+<div id="j-fish-skip" style=" position: relative;height: 153px;width: auto;"></div>
+<script defer>
+  var RENDERER = {
+    POINT_INTERVAL: 5,
+    FISH_COUNT: 3,
+    MAX_INTERVAL_COUNT: 50,
+    INIT_HEIGHT_RATE: .5,
+    THRESHOLD: 50,
+    FISH_COLOR: '',
+    init: function () {
+      this.setFishColor(); this.setParameters(), this.reconstructMethods(), this.setup(), this.bindEvent(), this.render()
+    },
+    setFishColor: function () {
+      let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+      if (isDark) {
+        this.FISH_COLOR = '#222'; // 暗黑色，有时间把这整成一个变量
+      } else {
+        this.FISH_COLOR = '#87ccee' || '#7bd3f7';
+      }
+    },
+    setParameters: function () {
+      this.$window = $(window), this.$container = $("#j-fish-skip"), this.$canvas = $("<canvas />"), this.context = this.$canvas.appendTo(this.$container).get(0).getContext("2d"), this.points = [], this.fishes = [], this.watchIds = []
+    },
+    createSurfacePoints: function () {
+      var t = Math.round(this.width / this.POINT_INTERVAL);
+      this.pointInterval = this.width / (t - 1), this.points.push(new SURFACE_POINT(this, 0));
+      for (var i = 1; i < t; i++) {
+        var e = new SURFACE_POINT(this, i * this.pointInterval),
+          h = this.points[i - 1];
+        e.setPreviousPoint(h), h.setNextPoint(e), this.points.push(e)
+      }
+    },
+    reconstructMethods: function () {
+      this.watchWindowSize = this.watchWindowSize.bind(this), this.jdugeToStopResize = this.jdugeToStopResize.bind(this), this.startEpicenter = this.startEpicenter.bind(this), this.moveEpicenter = this.moveEpicenter.bind(this), this.reverseVertical = this.reverseVertical.bind(this), this.render = this.render.bind(this)
+    },
+    setup: function () {
+      this.points.length = 0, this.fishes.length = 0, this.watchIds.length = 0, this.intervalCount = this.MAX_INTERVAL_COUNT, this.width = this.$container.width(), this.height = this.$container.height(), this.fishCount = this.FISH_COUNT * this.width / 500 * this.height / 500, this.$canvas.attr({
+        width: this.width,
+        height: this.height
+      }), this.reverse = !1, this.fishes.push(new FISH(this)), this.createSurfacePoints()
+    },
+    watchWindowSize: function () {
+      this.clearTimer(), this.tmpWidth = this.$window.width(), this.tmpHeight = this.$window.height(), this.watchIds.push(setTimeout(this.jdugeToStopResize, this.WATCH_INTERVAL))
+    },
+    clearTimer: function () {
+      for (; this.watchIds.length > 0;) clearTimeout(this.watchIds.pop())
+    },
+    jdugeToStopResize: function () {
+      var t = this.$window.width(),
+        i = this.$window.height(),
+        e = t == this.tmpWidth && i == this.tmpHeight;
+      this.tmpWidth = t, this.tmpHeight = i, e && this.setup()
+    },
+    bindEvent: function () {
+      this.$window.on("resize", this.watchWindowSize), this.$container.on("mouseenter", this.startEpicenter), this.$container.on("mousemove", this.moveEpicenter)
+    },
+    getAxis: function (t) {
+      var i = this.$container.offset();
+      return {
+        x: t.clientX - i.left + this.$window.scrollLeft(),
+        y: t.clientY - i.top + this.$window.scrollTop()
+      }
+    },
+    startEpicenter: function (t) {
+      this.axis = this.getAxis(t)
+    },
+    moveEpicenter: function (t) {
+      var i = this.getAxis(t);
+      this.axis || (this.axis = i), this.generateEpicenter(i.x, i.y, i.y - this.axis.y), this.axis = i
+    },
+    generateEpicenter: function (t, i, e) {
+      if (!(i < this.height / 2 - this.THRESHOLD || i > this.height / 2 + this.THRESHOLD)) {
+        var h = Math.round(t / this.pointInterval);
+        h < 0 || h >= this.points.length || this.points[h].interfere(i, e)
+      }
+    },
+    reverseVertical: function () {
+      this.reverse = !this.reverse;
+      for (var t = 0, i = this.fishes.length; t < i; t++) this.fishes[t].reverseVertical()
+    },
+    controlStatus: function () {
+      for (var t = 0, i = this.points.length; t < i; t++) this.points[t].updateSelf();
+      for (t = 0, i = this.points.length; t < i; t++) this.points[t].updateNeighbors();
+      this.fishes.length < this.fishCount && 0 == --this.intervalCount && (this.intervalCount = this.MAX_INTERVAL_COUNT, this.fishes.push(new FISH(this)))
+    },
+    render: function () {
+      requestAnimationFrame(this.render), this.controlStatus(), this.context.clearRect(0, 0, this.width, this.height), this.context.fillStyle = this.FISH_COLOR;
+      for (var t = 0, i = this.fishes.length; t < i; t++) this.fishes[t].render(this.context);
+      this.context.save(), this.context.globalCompositeOperation = "xor", this.context.beginPath(), this.context.moveTo(0, this.reverse ? 0 : this.height);
+      for (t = 0, i = this.points.length; t < i; t++) this.points[t].render(this.context);
+      this.context.lineTo(this.width, this.reverse ? 0 : this.height), this.context.closePath(), this.context.fill(), this.context.restore()
+    }
+  },
+  SURFACE_POINT = function (t, i) {
+    this.renderer = t, this.x = i, this.init()
+  };
+  SURFACE_POINT.prototype = {
+    SPRING_CONSTANT: .03,
+    SPRING_FRICTION: .9,
+    WAVE_SPREAD: .3,
+    ACCELARATION_RATE: .01,
+    init: function () {
+      this.initHeight = this.renderer.height * this.renderer.INIT_HEIGHT_RATE, this.height = this.initHeight, this.fy = 0, this.force = {
+        previous: 0,
+        next: 0
+      }
+    },
+    setPreviousPoint: function (t) {
+      this.previous = t
+    },
+    setNextPoint: function (t) {
+      this.next = t
+    },
+    interfere: function (t, i) {
+      this.fy = this.renderer.height * this.ACCELARATION_RATE * (this.renderer.height - this.height - t >= 0 ? -1 : 1) * Math.abs(i)
+    },
+    updateSelf: function () {
+      this.fy += this.SPRING_CONSTANT * (this.initHeight - this.height), this.fy *= this.SPRING_FRICTION, this.height += this.fy
+    },
+    updateNeighbors: function () {
+      this.previous && (this.force.previous = this.WAVE_SPREAD * (this.height - this.previous.height)), this.next && (this.force.next = this.WAVE_SPREAD * (this.height - this.next.height))
+    },
+    render: function (t) {
+      this.previous && (this.previous.height += this.force.previous, this.previous.fy += this.force.previous), this.next && (this.next.height += this.force.next, this.next.fy += this.force.next), t.lineTo(this.x, this.renderer.height - this.height)
+    }
+  };
+  var FISH = function (t) {
+    this.renderer = t, this.init()
+  };
+  FISH.prototype = {
+    GRAVITY: .4,
+    init: function () {
+      this.direction = Math.random() < .5, this.x = this.direction ? this.renderer.width + this.renderer.THRESHOLD : -this.renderer.THRESHOLD, this.previousY = this.y, this.vx = this.getRandomValue(4, 10) * (this.direction ? -1 : 1), this.renderer.reverse ? (this.y = this.getRandomValue(1 * this.renderer.height / 10, 4 * this.renderer.height / 10), this.vy = this.getRandomValue(2, 5), this.ay = this.getRandomValue(.05, .2)) : (this.y = this.getRandomValue(6 * this.renderer.height / 10, 9 * this.renderer.height / 10), this.vy = this.getRandomValue(-5, -2), this.ay = this.getRandomValue(-.2, -.05)), this.isOut = !1, this.theta = 0, this.phi = 0
+    },
+    getRandomValue: function (t, i) {
+      return t + (i - t) * Math.random()
+    },
+    reverseVertical: function () {
+      this.isOut = !this.isOut, this.ay *= -1
+    },
+    controlStatus: function (t) {
+      this.previousY = this.y, this.x += this.vx, this.y += this.vy, this.vy += this.ay, this.renderer.reverse ? this.y > this.renderer.height * this.renderer.INIT_HEIGHT_RATE ? (this.vy -= this.GRAVITY, this.isOut = !0) : (this.isOut && (this.ay = this.getRandomValue(.05, .2)), this.isOut = !1) : this.y < this.renderer.height * this.renderer.INIT_HEIGHT_RATE ? (this.vy += this.GRAVITY, this.isOut = !0) : (this.isOut && (this.ay = this.getRandomValue(-.2, -.05)), this.isOut = !1), this.isOut || (this.theta += Math.PI / 20, this.theta %= 2 * Math.PI, this.phi += Math.PI / 30, this.phi %= 2 * Math.PI), this.renderer.generateEpicenter(this.x + (this.direction ? -1 : 1) * this.renderer.THRESHOLD, this.y, this.y - this.previousY), (this.vx > 0 && this.x > this.renderer.width + this.renderer.THRESHOLD || this.vx < 0 && this.x < -this.renderer.THRESHOLD) && this.init()
+    },
+    render: function (t) {
+      t.save(), t.translate(this.x, this.y), t.rotate(Math.PI + Math.atan2(this.vy, this.vx)), t.scale(1, this.direction ? 1 : -1), t.beginPath(), t.moveTo(-30, 0), t.bezierCurveTo(-20, 15, 15, 10, 40, 0), t.bezierCurveTo(15, -10, -20, -15, -30, 0), t.fill(), t.save(), t.translate(40, 0), t.scale(.9 + .2 * Math.sin(this.theta), 1), t.beginPath(), t.moveTo(0, 0), t.quadraticCurveTo(5, 10, 20, 8), t.quadraticCurveTo(12, 5, 10, 0), t.quadraticCurveTo(12, -5, 20, -8), t.quadraticCurveTo(5, -10, 0, 0), t.fill(), t.restore(), t.save(), t.translate(-3, 0), t.rotate((Math.PI / 3 + Math.PI / 10 * Math.sin(this.phi)) * (this.renderer.reverse ? -1 : 1)), t.beginPath(), this.renderer.reverse ? (t.moveTo(5, 0), t.bezierCurveTo(10, 10, 10, 30, 0, 40), t.bezierCurveTo(-12, 25, -8, 10, 0, 0)) : (t.moveTo(-5, 0), t.bezierCurveTo(-10, -10, -10, -30, 0, -40), t.bezierCurveTo(12, -25, 8, -10, 0, 0)), t.closePath(), t.fill(), t.restore(), t.restore(), this.controlStatus(t)
+    }
+  }, $(function () {
+    RENDERER.init()
+    $('.dark').click(function () {
+      setTimeout(() => {
+        RENDERER.setFishColor();
+        RENDERER.context.fill();
+      });
+    })
+  });
+</script>
+  
+  <div class="footer bg-color">
+    <div class="footer-main">
+      
+        
+          <div class="link">
+            
+              
+                <a target="_blank" rel="noopener" href="https://space.bilibili.com/456189645?spm_id_from=333.1007.0.0" class="social">
+                  
+                    <i class="fa fa-video" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+              
+                <a href="mailto:xuzhiweiro@163.com" class="social">
+                  
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+              
+                <a target="_blank" rel="noopener" href="https://github.com/former-south-wind" class="social">
+                  
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+              
+                <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=2926700458" class="social">
+                  
+                    <i class="fab fa-qq" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+              
+                <a href="/atom.xml" class="social">
+                  
+                    <i class="fas fa-rss" aria-hidden="true"></i>
+                  
+                </a>
+              
+            
+          </div>
+        
+      
+        
+          <div class="footer-copyright">
+            <p>Copyright © 2019 - 2024 <a target="_blank" rel="noopener" href="https://github.com/former-south-wind">旧时南风</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> </p>
+
+          </div>
+        
+      
+        
+          <div class="footer-custom">
+            
+          </div>
+        
+      
+    </div>
+  </div>
+
+
+
+    <!-- 渲染暗黑按钮 -->
+    
+      <div class="dark" onclick="toggleDarkMode()">
+  <div class="dark-content">
+    <i class="fas" id="darkIcon" aria-hidden="true"></i>
+  </div>
+</div>
+
+<script defer>
+  $(function() {
+    // 初始化暗黑模式状态
+    let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+    updateDarkModeIcon(isDark);
+  });
+
+  function toggleDarkMode() {
+    const isDark = $(document.body).hasClass('darkModel');
+    $(document.body).toggleClass('darkModel');
+    localStorage.setItem('dark', !isDark);
+    updateDarkModeIcon(!isDark);
+  }
+
+  function updateDarkModeIcon(isDark) {
+    const iconElement = document.getElementById('darkIcon');
+    if (isDark) {
+      iconElement.classList.remove('fa-moon');
+      iconElement.classList.add('fa-lightbulb');
+    } else {
+      iconElement.classList.remove('fa-lightbulb');
+      iconElement.classList.add('fa-moon');
+    }
+  }
+</script>
+
+    
+    <!-- 渲染回到顶部按钮 -->
+    
+      <div class="goTop top-btn-color" pointer>
+  <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</div>
+<script defer src="/js/goTop.js"></script>
+
+    
+    <!-- 渲染左下角音乐播放器 -->
+    
+      <link rel="stylesheet" href="/js/aplayer/APlayer@1.10.1.min.css">
+<style>
+.aplayer .aplayer-lrc p {
+  
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px !important;
+}
+
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  font-size: 15px;
+  color: #42b983;
+}
+
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0px !important;
+}
+
+
+</style>
+<meting-js  
+  class=""
+  server="netease"
+  type="playlist"
+  id="9143039841"
+  fixed='true'
+  autoplay='false'
+  theme='#42b983'
+  loop='all'
+  order='random'
+  preload='auto'
+  volume='0.7'
+  list-folded='true'
+>
+</meting-js>
+
+<!-- <style>
+  #aplayer {
+    position: fixed;
+    left: 0;
+    bottom: 300px;
+  }
+</style> -->
+<script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    
+
+    <!-- 图片放大 -->
+    
+      <script src="https://unpkg.com/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    
+
+    <!-- 百度解析 -->
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script async>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 背景彩带 -->
+    
+
+    <script src="/js/utils/index.js"></script>
+    <script src="/js/app.js"></script>
+    
+    <!-- 文章目录所需js -->
+<!-- <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
+
+<script>
+  var headerEl = 'h1, h2, h3, h4',  //headers 
+    content = '.post-detail',//文章容器
+    idArr = {};  //标题数组以确定是否增加索引id
+  //add #id
+  var option = {
+    // Where to render the table of contents.
+    tocSelector: '.toc',
+    // Where to grab the headings to build the table of contents.
+    contentSelector: content,
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: headerEl,
+    scrollSmooth: true,
+    scrollSmoothOffset: -70,
+    // headingsOffset: -($(window).height() * 0.4 - 45),
+    headingsOffset: -($(window).height() * 0.4 - 70),
+    // positionFixedSelector: '.toc-main',
+    // positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+    activeLinkClass: 'is-active-link',
+    orderedList: true,
+    collapseDepth: 20,
+    // onClick: function (e) {},
+  }
+  if ($('.toc').length > 0) {
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      tocbot.init(option);
+      mobileTocClick();
+    });
+
+  }
+
+  window.tocScrollFn = function () {
+    return bamboo.throttle(function () {
+      findHeadPosition();
+    }, 100)()
+  }
+  window.addEventListener('scroll', tocScrollFn);
+
+  const findHeadPosition = function (top) {
+    if ($('.toc-list').length <= 0) {
+      return false;
+    }
+    setTimeout(() => {  // or DOMContentLoaded 
+      autoScrollToc();
+    }, 0);
+  }
+
+  const autoScrollToc = function () {
+    const $activeItem = document.querySelector('.is-active-link');
+    const $cardToc = document.querySelector('.toc-content');
+    const activePosition = $activeItem.getBoundingClientRect().top
+    const sidebarScrollTop = $cardToc.scrollTop
+    if (activePosition > (document.documentElement.clientHeight - 100)) {
+      $cardToc.scrollTop = sidebarScrollTop + 150
+    }
+    if (activePosition < 150) {
+      $cardToc.scrollTop = sidebarScrollTop - 150
+    }
+  }
+
+  document.addEventListener('pjax:send', function () {
+    if ($('.toc').length) {
+      tocbot.destroy();
+    }
+  });
+
+  document.addEventListener('pjax:complete', function () {
+    if ($('.toc').length) {
+      tocbot.init(option);
+      mobileTocClick();
+    }
+  });
+  
+  // 手机端toc按钮点击出现目录
+  const mobileTocClick = function () {
+    const $cardTocLayout = document.getElementsByClassName('side_toc')[0];
+    const $cardToc = $cardTocLayout.getElementsByClassName('toc-content')[0];
+    let right = '45px';
+    if (window.innerWidth >= 551 && window.innerWidth <= 992) {
+      right = '100px'
+    }
+    const mobileToc = {
+      open: () => {
+        $cardTocLayout.style.cssText = 'animation: toc-open .3s; opacity: 1; right: ' + right
+      },
+
+      close: () => {
+        $cardTocLayout.style.animation = 'toc-close .2s'
+        setTimeout(() => {
+          $cardTocLayout.style.cssText = "opacity:''; animation: ''; right: ''"
+        }, 100)
+      }
+    }
+    document.getElementById('toc-mobile-btn').addEventListener('click', () => {
+      if (window.getComputedStyle($cardTocLayout).getPropertyValue('opacity') === '0') mobileToc.open()
+      else mobileToc.close()
+    })
+
+    $cardToc.addEventListener('click', (e) => {
+      if (window.innerWidth < 992) { // 小于992px的时候
+        mobileToc.close()
+      }
+    })
+  }
+</script>
+
+<style>
+  /* .is-position-fixed {
+    position: sticky !important;
+    top: 74px;
+  }
+
+  .toc-main ul {
+    counter-reset: show-list;
+  }
+
+  .toc-main ul li::before {
+    content: counter(item)".";
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 0;
+  } */
+</style>
+ 
+
+<!-- 设置导航背景 -->
+<script>
+  let setHeaderClass = () => {
+    const nav = $('#navHeader');
+    const navTop = nav.outerHeight();
+    const winTop = $(window).scrollTop();
+    if(winTop > navTop) {
+      nav.addClass('header-bg-color');
+    }
+    else {
+      nav.removeClass('header-bg-color');
+    }
+  };
+
+  let scrollCollect = () => {
+    return bamboo.throttle(function (e) {
+      setHeaderClass();
+    }, 200)()
+  }
+
+  let initHeaderBg = () => {
+    setHeaderClass();
+  }
+
+  setHeaderClass();
+  window.addEventListener('scroll', scrollCollect);
+
+  document.addEventListener('pjax:send', function () {
+    window.removeEventListener('scroll', scrollCollect)
+  })
+  document.addEventListener('pjax:complete', function () {
+    window.addEventListener('scroll', scrollCollect);
+    setHeaderClass();
+  })
+</script> 
+
+<!-- 渲染issues标签里的内容 -->
+<script>
+  function loadIssuesJS() {
+    if ($(".post-detail").find(".issues-api").length == 0) {
+      return;
+    } 
+    loadScript('/js/issues/index.js');
+  };
+  $(function () {
+    loadIssuesJS();
+  });
+  document.addEventListener('pjax:complete', function () {
+    if (typeof IssuesAPI == "undefined") {
+      loadIssuesJS();
+    }
+  })
+</script>
+
+<!-- 渲染远程json加载的图片标签(getPhotoOnline)里的内容 -->
+<script>
+  function loadPhotoOnlineJS() {
+    if ($(".post-detail").find(".getJsonPhoto-api").length == 0) {
+      return;
+    } 
+    loadScript('/js/getPhotoOnline/index.js');
+  };
+  $(function () {
+    loadPhotoOnlineJS();
+  });
+  document.addEventListener('pjax:complete', function () {
+    if (typeof getPhotoJson == "undefined") {
+      loadPhotoOnlineJS();
+    }
+  })
+</script>
+
+<!-- 渲染远程json加载的talk标签(getTalkOnline)里的内容 -->
+<script>
+  function loadTalkOnlineJS() {
+    if ($(".post-detail").find(".getJsonTalk-api").length == 0) {
+      return;
+    } 
+    loadScript('https://cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js'); // 瀑布流插件，https://raphamorim.io/waterfall.js/
+    loadScript('/js/getTalkOnline/index.js');
+  };
+  $(function () {
+    loadTalkOnlineJS();
+  });
+  document.addEventListener('pjax:complete', function () {
+    if (typeof getTalkJson == "undefined") {
+      loadTalkOnlineJS();
+    }
+  })
+</script>
+
+<!-- 渲染远程json加载的site-card标签(getSiteOnline)里的内容 -->
+<script>
+  function loadSiteOnlineJS() {
+    if ($(".post-detail").find(".getJsonSite-api").length == 0) {
+      return;
+    } 
+    loadScript('/js/getSiteOnline/index.js');
+  };
+  $(function () {
+    loadSiteOnlineJS();
+  });
+  document.addEventListener('pjax:complete', function () {
+    if (typeof getSiteJson == "undefined") {
+      loadSiteOnlineJS();
+    }
+  })
+</script>
+
+<!-- 输入框打字特效 -->
+<!-- 输入框打字特效 -->
+
+  <script src="/js/activate-power-mode.js"></script>
+  <script>
+    POWERMODE.colorful = true;  // 打开随机颜色特效
+    POWERMODE.shake = false;    // 关闭输入框抖动
+    document.body.addEventListener('input', POWERMODE);//监听打字事件
+  </script>
+
+
+<!-- markdown代码一键复制功能 -->
+
+  <link rel="stylesheet" href="https://unpkg.com/v-plugs-ayu/lib/ayu.css">
+  <script src="https://unpkg.com/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+  <script src="/js/clipboard/clipboard.min.js"></script>
+  <div id="appCopy">
+  </div>
+  <script data-pjax>
+    var vm = new Vue({
+      el: '#appCopy',
+      data: {
+      },
+      computed: {
+      },
+      mounted() {
+        const that = this;
+        var copy = '复制';
+        /* code */
+        var initCopyCode = function () {
+          var copyHtml = '';
+          copyHtml += '<button class="btn-copy" data-clipboard-snippet="" style="position:absolute;top:0;right:0;z-index:1;">';
+          copyHtml += '<i class="fas fa-copy"></i><span>' + copy + '</span>';
+          copyHtml += '</button>';
+          $(".post-detail pre").not('.gutter pre').wrap("<div class='codeBox' style='position:relative;width:100%;'></div>")
+          $(".post-detail pre").not('.gutter pre').before(copyHtml);
+          new ClipboardJS('.btn-copy', {
+            target: function (trigger) {
+              return trigger.nextElementSibling;
+            }
+          });
+        }
+        initCopyCode();
+        $('.btn-copy').unbind('click').bind('click', function () {
+          doSomething();
+        })
+        $(document).unbind('keypress').bind('keypress', function (e) {
+          if (e.ctrlKey && e.keyCode == 67) {
+            doSomething();
+          }
+        })
+
+        function doSomething() {
+          that.$notify({
+            title: "成功",
+            content: "代码已复制，请遵守相关授权协议。",
+            type: 'success'
+          })
+        }
+      },
+      methods: {
+      },
+      created() { }
+    })
+  </script>
+  
+
+<!-- 图片懒加载 -->
+<script defer src="https://unpkg.com/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+<!-- 卡片滚动动画 -->
+   
+
+<!-- 评论所需js -->
+
+  
+        <script type="text/javascript">
+  var utteranceComment = {};
+
+  function check_utterance() {
+    let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+    if (isDark) {
+      utteranceComment.Theme = 'github-dark';
+    } else {
+      utteranceComment.Theme = 'github-light';
+    }
+
+    return document.getElementById("gitment-container");
+  }
+  comment_el = '#gitment-container';
+  load_utterance = function () {
+    if ($(comment_el).length) {
+      // 匿名函数，防止污染全局变量
+      const HEAD = check_utterance();
+
+      var utterances = document.createElement('script');
+      utterances.type = 'text/javascript';
+      utterances.async = true;
+      utterances.setAttribute('issue-term', 'pathname')
+      utterances.setAttribute('theme', utteranceComment.Theme)
+      utterances.setAttribute('repo', 'former-south-wind/former-south-wind.github.io')
+      utterances.crossorigin = 'anonymous';
+      utterances.src = 'https://utteranc.es/client.js';
+      // content 是要插入评论的地方
+      document.getElementById('gitment-container').appendChild(utterances);
+
+    }
+  }
+
+  function dark_utterance() {
+    const HEAD = check_utterance();
+    if (!HEAD) return;
+    const message = {
+      type: 'set-theme',
+      theme: utteranceComment.Theme
+    };
+    const utteranceIframe = document.querySelector('iframe');
+    utteranceIframe.contentWindow.postMessage(message, 'https://utteranc.es');
+  }
+
+  $(document).ready(load_utterance);
+  document.addEventListener('pjax:complete', function () {
+    load_utterance();
+  });
+
+  $('.dark').click(function () {
+    setTimeout(() => {
+      dark_utterance();
+    });
+  })
+
+</script>
+
+<style>
+  .utterances {
+    max-width: inherit !important;
+  }
+</style>
+      
+
+
+<!-- 鼠标点击特效 -->
+<!-- 爱心点击 -->
+
+   
+    <script async src="/js/cursor/clicklove.js"></script> 
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" data-pjax></script>
+
+
+<!-- 轮播图标签 -->
+<script>
+  var bambooSwiperTag = {};
+  function load_swiper() {
+    if (!document.querySelectorAll(".post-swiper-container")[0]) return;
+    loadCSS("https://unpkg.com/swiper@6/swiper-bundle.min.css")
+    loadScript("https://unpkg.com/swiper@6/swiper-bundle.min.js").then(() => {
+      pjax_swiper();
+    });
+  }
+
+  load_swiper();
+
+  function pjax_swiper() {
+    bambooSwiperTag.swiper = new Swiper('.post-swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 8,
+      centeredSlides: true,
+      loop: true,
+      autoplay: true ? {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+      } : false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on:{
+        init: function(){
+          swiperAnimateCache(this); //隐藏动画元素 
+          swiperAnimate(this); //初始化完成开始动画
+        }, 
+        slideChangeTransitionEnd: function(){ 
+          swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+          //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+        } 
+      }
+    });
+  }
+
+  document.addEventListener('pjax:complete', function () {
+    if (!document.querySelectorAll(".post-swiper-container")[0]) return;
+    if (typeof bambooSwiperTag.swiper === "undefined") {
+      load_swiper();
+    } else {
+      pjax_swiper();
+    }
+  });
+</script>
+    <!-- pjax -->
+    
+
+<!-- pjax -->
+
+
+  <script src="/js/pjax@0.2.8/index.js"></script>
+  
+    <div class="pjax-animate">
+  
+    <div class="loading-circle"><div id="loader-circle"></div></div>
+    <script>
+      window.ShowLoading = function() {
+        $(".loading-circle").css("display", "block");
+      };
+      window.HideLoading = function() {
+        $(".loading-circle").css("display", "none");
+      }
+    </script>
+  
+	<script>
+    document.addEventListener('pjax:complete', function () {
+      window.HideLoading();
+    })
+    document.addEventListener('pjax:send', function () {
+      window.ShowLoading();
+    })
+    document.addEventListener('pjax:error', function () {
+      window.HideLoading();
+    })
+	</script>
+</div>
+
+  
+
+  <script>
+    var pjax = new Pjax({
+      elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([no-pjax])',   // 拦截正常带链接的 a 标签
+      selectors: ["#pjax-container","title"],                                   // 根据实际需要确认重载区域
+      cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+      timeout: 5000
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+
+    })
+    
+    document.addEventListener('pjax:complete', function () {
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      window.location.href = e.triggerElement.href;
+    })
+    
+    // 刷新不从顶部开始
+    document.addEventListener("DOMContentLoaded", function () {
+      history.scrollRestoration = 'auto';
+    })
+  </script>
+
+
+
+  </body>
+</html>
