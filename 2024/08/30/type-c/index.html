@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>树莓派使用及linux常用命令 | Souther Blog</title>
+  <title>Type-C | Souther Blog</title>
 
   <link rel="icon" type="image/png" href="/medias/icons/favicon.png">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -511,21 +511,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://s21.ax1x.com/2024/07/19/pkTuvM8.webp')">
+  background-position: center center;position: relative;background-image:url('https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        树莓派使用及linux常用命令
+        Type-C
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2024-07-11 |
+          <i class="fas fa-calendar"></i> 发表于：2024-08-30 |
         </span>
       
 
@@ -534,7 +534,7 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 347 |
+            <i class="fas fa-file-text-o"></i> 字数统计: 25 |
           </span>
   
           <span class="min2read">
@@ -565,41 +565,10 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 id="1、树莓派"><a href="#1、树莓派" class="headerlink" title="1、树莓派"></a>1、树莓派</h1><h2 id="1、常用命令"><a href="#1、常用命令" class="headerlink" title="1、常用命令"></a>1、常用命令</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查看树莓派信息</span></span><br><span class="line"><span class="number">1.</span> pinout</span><br><span class="line"><span class="number">2.</span> cat /proc/device-tree/model</span><br><span class="line"></span><br><span class="line"><span class="comment">//查看cpu</span></span><br><span class="line"><span class="number">1</span>、cat /proc/cpuinfo</span><br><span class="line"></span><br><span class="line"><span class="comment">//打印温度</span></span><br><span class="line"><span class="number">1</span>、echo $[$(cat /sys/class/thermal/thermal_zone0/temp)/<span class="number">1000</span>]</span><br></pre></td></tr></table></figure>
-<h2 id="2、树莓派使用摄像头"><a href="#2、树莓派使用摄像头" class="headerlink" title="2、树莓派使用摄像头"></a>2、树莓派使用摄像头</h2><p>[微雪电子RPi Camera V2](<a target="_blank" rel="noopener" href="https://www.waveshare.net/wiki/RPi_Camera_V2#.E8.BD.AF.E4.BB.B6.E9.85.8D.E7.BD.AE">RPi Camera V2 - Waveshare Wiki</a>)</p>
-<h2 id="3、安装中文输入法"><a href="#3、安装中文输入法" class="headerlink" title="3、安装中文输入法"></a>3、安装中文输入法</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/f245775274/article/details/136246989?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172053845616800225522603%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=172053845616800225522603&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-136246989-null-null.142%5Ev100%5Epc_search_result_base9&utm_term=%E6%A0%91%E8%8E%93%E6%B4%BE%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95&spm=1018.2226.3001.4187">树莓派怎么安装中文输入法</a></p>
-<h2 id="4、文件传输"><a href="#4、文件传输" class="headerlink" title="4、文件传输"></a>4、文件传输</h2><h3 id="1、FTP"><a href="#1、FTP" class="headerlink" title="1、FTP"></a>1、FTP</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">FTP</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装vsftpd服务器</span></span><br><span class="line">sudo apt-get install vsftpd</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">启动ftp服务</span></span><br><span class="line">sudo service vsftpd start </span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重启</span></span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<p><em><strong>ps</strong></em>: <a target="_blank" rel="noopener" href="https://blog.csdn.net/u014691333/article/details/115227957">ftp上传文件出错：550 Permission denied</a></p>
-<h3 id="2、-Samba"><a href="#2、-Samba" class="headerlink" title="2、 Samba"></a>2、 Samba</h3><p><a target="_blank" rel="noopener" href="https://developer.baidu.com/article/details/3248075">树莓派上的Samba NAS系统：搭建步骤与实用指南</a></p>
-<h2 id="5、OELD显示"><a href="#5、OELD显示" class="headerlink" title="5、OELD显示"></a>5、OELD显示</h2><ul>
-<li><p><strong>–</strong>&gt;<a target="_blank" rel="noopener" href="https://github.com/rm-hull/luma.examples">luma.examples</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/2202_75762088/article/details/134625775">进阶篇——树莓派OLED模块的使用 大量例程详解</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/2202_75762088/article/details/134625775">解决运行pip install时提示错误：error: externally-managed-environment</a>, 使用&#96;&#96;&#96;sudo apt-get install python-luma.oled解决;</p>
-</li>
-</ul>
-<h2 id="6、开机自动运行python脚本"><a href="#6、开机自动运行python脚本" class="headerlink" title="6、开机自动运行python脚本"></a>6、开机自动运行python脚本</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/rc.local</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">在exit0前增加一行</span></span><br><span class="line">sudo python3 /home/pi/stats.py &amp;</span><br></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43698730/article/details/121323743">树莓派开机自动运行python程序的两种方式</a></p>
-<h1 id="2、Linux常用命令"><a href="#2、Linux常用命令" class="headerlink" title="2、Linux常用命令"></a>2、Linux常用命令</h1><p><a target="_blank" rel="noopener" href="https://wwww.linuxcool.com/">Liunx命令大全</a></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查看IP地址</span></span><br><span class="line"><span class="number">1</span>、hostname -I</span><br><span class="line"></span><br><span class="line"><span class="comment">//监控系统信息</span></span><br><span class="line"><span class="number">1</span>、top</span><br><span class="line"><span class="number">2</span>、htop</span><br><span class="line"></span><br><span class="line"><span class="comment">//安装.deb文件</span></span><br><span class="line"><span class="number">1</span>、sudo dpkg -i xxxxx.deb</span><br><span class="line"></span><br><span class="line"><span class="comment">//卸载.deb文件</span></span><br><span class="line"><span class="number">1</span>、sudo dpkg -r xxxxx</span><br><span class="line"></span><br><span class="line"><span class="comment">//查看已安装.deb文件（过滤:含&quot;a&quot;的文件）</span></span><br><span class="line"><span class="number">1</span>、sudo dpkg -l|grep <span class="string">&quot;a&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="3、树莓派小电脑"><a href="#3、树莓派小电脑" class="headerlink" title="3、树莓派小电脑"></a>3、树莓派小电脑</h1><p>​		树莓派4B4GV1.2，7寸ISP无触摸屏幕，树莓派官方桌面版带推荐软件版本。</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/cXqGPU"><img src="https://z3.ax1x.com/2021/04/23/cXqGPU.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/04/23/cXqGPU.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="cXqGPU.md.jpg" style="zoom: 150%;" /></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/cXq0Vx"><img src="https://z3.ax1x.com/2021/04/23/cXq0Vx.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/04/23/cXq0Vx.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="cXq0Vx.md.jpg" style="zoom:150%;" /></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/cXqDIK"><img src="https://z3.ax1x.com/2021/04/23/cXqDIK.md.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/04/23/cXqDIK.md.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="cXqDIK.md.jpg" style="zoom:150%;" /></a></p>
-
+        <h1 id="1、参考资料"><a href="#1、参考资料" class="headerlink" title="1、参考资料"></a>1、参考资料</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/AirCity123/article/details/103554177">Type-C协议简介（CC检测原理)</a></p>
+<h1 id="2、实际应用"><a href="#2、实际应用" class="headerlink" title="2、实际应用"></a>2、实际应用</h1><h2 id="1、5V取电"><a href="#1、5V取电" class="headerlink" title="1、5V取电"></a>1、5V取电</h2>
       </div>
       <div class="post-tags-categories">
-        
-        <div class="tags">
-          
-            <a href="/tags/Linux/" class="">
-              Linux
-            </a>
-          
-        </div>
         
       </div>
       
@@ -610,7 +579,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2024/07/11/shu-mei-pai-shi-yong-ji-linux-chang-yong-ming-ling/" target="_blank" title="树莓派使用及linux常用命令">http://former-south-wind.github.io/2024/07/11/shu-mei-pai-shi-yong-ji-linux-chang-yong-ming-ling/</a>
+    <a href="/2024/08/30/type-c/" target="_blank" title="Type-C">http://former-south-wind.github.io/2024/08/30/type-c/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -628,41 +597,22 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img" style="background-size: cover; 
-      background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://s21.ax1x.com/2024/07/19/pkozOmT.webp" class="lazyload placeholder" data-srcset="https://s21.ax1x.com/2024/07/19/pkozOmT.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-    </div>
-    <a href="/2024/07/13/esp32s3/" class="post-nav-link">
-      <div class="title">
-        <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">esp32s3</div>
-      </div>
-      
-      <!-- <div class="content">
-        1、乐鑫ESP32S3
-ESP32-S3 Wi-Fi &amp; BLE 5 SoC｜乐鑫科技 (espressif.c
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://s21.ax1x.com/2024/07/05/pkRRczF.jpg" class="lazyload placeholder" data-srcset="https://s21.ax1x.com/2024/07/05/pkRRczF.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" class="lazyload placeholder" data-srcset="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2024/07/05/nei-cun-guan-li-dui-zhan/" class="post-nav-link">
+    <a href="/2024/07/23/git/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">内存管理-堆栈</div>
+        <div class="title-text">Git</div>
       </div>
       <!-- <div class="content">
-        Conclusion
-The data stored on the stack is static, of fixed 
+        ​	Git 教程 | 菜鸟教程 (runoob.com)
+1、 Git 简介​	Git 是一个开源的分布式版本控制系统，
       </div> -->
     </a>
   </div>
@@ -893,7 +843,7 @@ The data stored on the stack is static, of fixed
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81%E6%A0%91%E8%8E%93%E6%B4%BE"><span class="toc-text">1、树莓派</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">1、常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BD%BF%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4"><span class="toc-text">2、树莓派使用摄像头</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95"><span class="toc-text">3、安装中文输入法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93"><span class="toc-text">4、文件传输</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81FTP"><span class="toc-text">1、FTP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81-Samba"><span class="toc-text">2、 Samba</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81OELD%E6%98%BE%E7%A4%BA"><span class="toc-text">5、OELD显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8Cpython%E8%84%9A%E6%9C%AC"><span class="toc-text">6、开机自动运行python脚本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%E3%80%81Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">2、Linux常用命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3%E3%80%81%E6%A0%91%E8%8E%93%E6%B4%BE%E5%B0%8F%E7%94%B5%E8%84%91"><span class="toc-text">3、树莓派小电脑</span></a></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">1、参考资料</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%E3%80%81%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8"><span class="toc-text">2、实际应用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%815V%E5%8F%96%E7%94%B5"><span class="toc-text">1、5V取电</span></a></li></ol></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -919,6 +869,27 @@ The data stored on the stack is static, of fixed
       <!-- hash算法 -->
       
       <div class="aside-list">
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2024/08/30/type-c/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">08-30</span>
+                
+              </div>
+              <a class="post-title" href="/2024/08/30/type-c/">Type-C</a>
+            </div>
+          </div>
         
           <div class="aside-list-item">
             
@@ -959,27 +930,6 @@ The data stored on the stack is static, of fixed
                 
               </div>
               <a class="post-title" href="/2024/07/19/ti-rtos/">TI-RTOS</a>
-            </div>
-          </div>
-        
-          <div class="aside-list-item">
-            
-            
-            
-
-            <div class="post-img-box">
-              <a href="/2024/07/19/c-yu-yan/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                
-                  <span class="post-date">07-19</span>
-                
-              </div>
-              <a class="post-title" href="/2024/07/19/c-yu-yan/">C语言</a>
             </div>
           </div>
         
