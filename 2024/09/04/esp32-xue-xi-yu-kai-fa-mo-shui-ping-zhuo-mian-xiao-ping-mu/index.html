@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Git | Souther Blog</title>
+  <title>esp32学习与开发-墨水屏桌面小屏幕 | Souther Blog</title>
 
   <link rel="icon" type="image/png" href="/medias/icons/favicon.png">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -511,21 +511,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp')">
+  background-position: center center;position: relative;background-image:url('https://s21.ax1x.com/2024/07/19/pkTKAzV.webp')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        Git
+        esp32学习与开发-墨水屏桌面小屏幕
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2024-07-23 |
+          <i class="fas fa-calendar"></i> 发表于：2024-09-04 |
         </span>
       
 
@@ -534,11 +534,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 417 |
+            <i class="fas fa-file-text-o"></i> 字数统计: 1.7k |
           </span>
   
           <span class="min2read">
-            <i class="fas fa-clock"></i> 阅读时长: 1分钟 |
+            <i class="fas fa-clock"></i> 阅读时长: 7分钟 |
           </span>
   
           
@@ -565,24 +565,107 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <p>​	<a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">Git 教程 | 菜鸟教程 (runoob.com)</a></p>
-<h1 id="1、-Git-简介"><a href="#1、-Git-简介" class="headerlink" title="1、 Git 简介"></a>1、 Git 简介</h1><p>​	Git 是一个开源的<strong>分布式版本控制系统</strong>，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了<strong>分布式版本库</strong>的方式，<strong>不必服务器端软件支持</strong>。</p>
-<p>​	Git 不仅仅是个版本控制系统，它也是个<strong>内容管理系统</strong>(CMS)，<strong>工作管理系统</strong>等。如果你是一个具有使用 SVN 背景的人，你需要做一定的思想转换，来适应 Git 提供的一些概念和特征。Git 与 SVN 区别点：</p>
+        <h1 id="1、学习"><a href="#1、学习" class="headerlink" title="1、学习"></a>1、学习</h1><p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wV4y1G7Vk?p=1&vd_source=c2fe15d5282e5de556b5fccfc70e9600">【有手就行系列】嵌入式单片机教程-桌面小屏幕实战教学 从设计、硬件、焊接到代码编写、调试 ESP32 持续更新2022</a></p>
+<p>​			<a target="_blank" rel="noopener" href="https://x509p6c8to.feishu.cn/docx/NQCTdjUFJoYoZ1xYHS9cIlbwnxh">对应在线文档</a></p>
+<p>​			<a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/arduino-esp32/en/latest/index.html">Welcome to ESP32 Arduino Core’s documentation - - — Arduino ESP32 latest documentation (espressif.com)</a></p>
+<h2 id="1、需求分析"><a href="#1、需求分析" class="headerlink" title="1、需求分析"></a>1、需求分析</h2><p>​	需求–&gt;需求细化–&gt;流程化–&gt;外设方案化–&gt;软硬件接口梳理；</p>
+<h2 id="2、-方案选型"><a href="#2、-方案选型" class="headerlink" title="2、 方案选型"></a>2、 方案选型</h2><p>​	外设选型（封装、通用&#x2F;稳定性、电池容量&#x2F;充电电流&#x2F;保护、主控主频&#x2F;RAM&#x2F;ROM&#x2F;IO）;</p>
+<p>​	<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv15539489/">ESP32选型一文就够，ESP32-WROOM-32、ESP32-WROVER、ESP32-S衍生模组、ESP32-PICO差异 - 哔哩哔哩 (bilibili.com)</a></p>
+<h2 id="3、绘制PCB"><a href="#3、绘制PCB" class="headerlink" title="3、绘制PCB"></a>3、绘制PCB</h2><p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_73588765/article/details/135441822">ESP32自动下载电路究竟是如何巧妙实现的-CSDN博客</a>)</p>
+<p>​	原理图–&gt;PCB（layout规范、绘制板框尺寸、布局、走线规范、过孔&#x2F;测试点&#x2F;泪滴&#x2F;丝印、DRC检查。（PS：CH340添加防倒灌电路、预留测试&#x2F;下载点、电源线要粗点.立创EDA绘制自己的元件（无符号&#x2F;封装）：新建元件库–&gt;新建符号–新建封装–&gt;关联符号与封装）;</p>
+<h2 id="4、设计梳理，绘制流程图"><a href="#4、设计梳理，绘制流程图" class="headerlink" title="4、设计梳理，绘制流程图"></a>4、设计梳理，绘制流程图</h2><h2 id="5、-开发环境搭建"><a href="#5、-开发环境搭建" class="headerlink" title="5、 开发环境搭建"></a>5、 开发环境搭建</h2><h3 id="1、Linux"><a href="#1、Linux" class="headerlink" title="1、Linux:"></a>1、Linux:</h3><p><strong>方案</strong>：虚拟机(ubuntu2 + ssh+samba + vscode(windows) +esp32开发依赖环境（ESP-IDF v5.3）；</p>
+<p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/get-started/linux-macos-setup.html">Linux 和 macOS 平台工具链的标准设置 - ESP32 - — ESP-IDF 编程指南 v5.3 文档 (espressif.com)</a></p>
+<p>​			<a target="_blank" rel="noopener" href="https://x509p6c8to.feishu.cn/docs/doccnk1gfc2Ddes4jzGDzm7L7tf">Embeded 2 环境搭建 - 飞书云文档 (feishu.cn)</a></p>
+<ol>
+<li><p>安装编译所需软件包：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>获取ESP-IDF:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~/esp</span><br><span class="line">cd ~/esp</span><br><span class="line">git clone -b v5.3 --recursive https://github.com/espressif/esp-idf.git</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>设置工具（编译器、调试器、Python包等）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">ESP-IDF 工具安装器会下载 Github 发布版本中附带的一些工具，如果访问 Github 较为缓慢，可以设置一个环境变量，从而优先选择 Espressif 的下载服务器进行 Github 资源下载。</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">推荐国内用户使用国内的下载服务器，以加快下载速度</span></span><br><span class="line">cd ~/esp/esp-idf</span><br><span class="line">export IDF_GITHUB_ASSETS=&quot;dl.espressif.cn/github_assets&quot;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">仅为 ESP32 安装所需工具</span></span><br><span class="line">./install.sh esp32</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>设置环境变量：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">. $HOME/esp/esp-idf/export.sh</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">可为执行 . <span class="variable">$HOME</span>/esp/esp-idf/export.sh创建一个别名</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">在.bashrc文件中添加</span></span><br><span class="line">alias get_idf=&#x27;. $HOME/esp/esp-idf/export.sh&#x27;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>开始使用：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">get_idf</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">将 get-started/hello_world 工程复制至本地的 ~/esp 目录下：</span></span><br><span class="line">cd ~/esp</span><br><span class="line">cp -r $IDF_PATH/examples/get-started/hello_world .</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">进入 hello_world 目录，设置 ESP32 为目标芯片，然后运行工程配置工具 menuconfig</span></span><br><span class="line">cd ~/esp/hello_world</span><br><span class="line">idf.py set-target esp32</span><br><span class="line">idf.py menuconfig</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">清楚先前编译产生的文件（涉及分区操作时最好执行一次）</span></span><br><span class="line">idf.py fullclean</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">编译</span></span><br><span class="line">idf.py build</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">烧录&amp;监视输出</span></span><br><span class="line">idf.py -p /dev/ttyUSB0 -b 115200 flash moitor</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">退出ESP-IDF监视器</span></span><br><span class="line">ctr+]</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">擦除整个 flash</span></span><br><span class="line">idf.py -p PORT erase-flash</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">若存在需要擦除的 OTA 数据</span></span><br><span class="line">idf.py -p PORT erase-otadata</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>(可选)更新ESP-IDF:</p>
+</li>
+</ol>
+<h3 id="2、windows"><a href="#2、windows" class="headerlink" title="2、windows:"></a>2、windows:</h3><h3 id="3、iats-pro-esp-idf3-0-windows"><a href="#3、iats-pro-esp-idf3-0-windows" class="headerlink" title="3、iats_pro @esp-idf3.0 @windows"></a>3、iats_pro @esp-idf3.0 @windows</h3><ol>
+<li>设置工具链：<a target="_blank" rel="noopener" href="https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20181001.zip">下载集成在一起的工具链和 MSYS2 压缩文件</a>，将 zip 压缩文件解压到 <code>C:\</code> (或其它路径，这里假设是 <code>C:\</code>)，它会使用预先准备的环境创建一个 <code>msys32</code> 目录，运行 <code>C:\msys32\mingw32.exe</code> 打开一个 MSYS2 的终端窗口，在此窗口下开发；</li>
+<li>获取ESP-IDF；</li>
+<li>设置ESP-IDF环境变量(这里使用单次：<code>export IDF_PATH=&quot;D:/South/iAts_pro/lib/esp-idf&quot;</code>)：<a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-idf/zh-cn/v3.3.1/get-started/add-idf_path-to-profile.html">在用户配置文件中添加 IDF_PATH — ESP-IDF 编程指南 v3.3.1 文档 (espressif.com)</a>;</li>
+<li>安装依赖的Python 软件包：<code>python2.7 -m pip install --user -r D\:/South/iAts_pro/lib/esp-idf/requirements</code>;</li>
+<li>示例工程：<code>cp -r D\:/South/iAts_pro/lib/esp-idf/examples/get-started/hello_world/ .</code>;</li>
+<li>配置：<code>make menuconfig</code>；</li>
+<li>编译、烧写、监视。</li>
+</ol>
+<h2 id="6、程序编写"><a href="#6、程序编写" class="headerlink" title="6、程序编写"></a>6、程序编写</h2><p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3/esp32/get-started/index.html">快速入门 - ESP32 - — ESP-IDF 编程指南 v5.3 文档 (espressif.com)</a></p>
+<h3 id="1、日志打印"><a href="#1、日志打印" class="headerlink" title="1、日志打印"></a>1、日志打印</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;esp_log.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">static</span> <span class="type">const</span> <span class="type">char</span> *TAG = <span class="string">&quot;MAIN APP&quot;</span>;</span><br><span class="line"></span><br><span class="line">ESP_LOGI(TAG,<span class="string">&quot;test&quot;</span>);</span><br><span class="line"><span class="comment">//ESP_LOGW();</span></span><br><span class="line"><span class="comment">//ESP_LOGE();</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-、多任务"><a href="#2-、多任务" class="headerlink" title="2 、多任务"></a>2 、多任务</h3><h3 id="3、Timer-消息队列"><a href="#3、Timer-消息队列" class="headerlink" title="3、Timer+消息队列"></a>3、Timer+消息队列</h3><h3 id="4、文件系统"><a href="#4、文件系统" class="headerlink" title="4、文件系统"></a>4、文件系统</h3><p>​	后续供http service使用，存储html等文件。spiffs文件系统移植，复制分区表<code>esp-idf/examples/storage/spiffs/partitions.csv</code>，到项目文件夹下，<code>idf.py menuconfig</code>设置参数：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CONFIG_PARTITION_TABLE_CUSTOM=y</span><br><span class="line">CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=<span class="string">&quot;partitions.csv&quot;</span></span><br><span class="line">CONFIG_PARTITION_TABLE_FILENAME=<span class="string">&quot;partition.csv&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5、NVS-非易失性存储"><a href="#5、NVS-非易失性存储" class="headerlink" title="5、NVS-非易失性存储"></a>5、NVS-非易失性存储</h3><p>​	KeyMap，供Wifi账号密码存储使用</p>
+<h3 id="6、GPIO"><a href="#6、GPIO" class="headerlink" title="6、GPIO"></a>6、GPIO</h3><h3 id="7、I2C"><a href="#7、I2C" class="headerlink" title="7、I2C"></a>7、I2C</h3><h3 id="8、SPI"><a href="#8、SPI" class="headerlink" title="8、SPI"></a>8、SPI</h3><p>​	高速、全双工、同步</p>
+<h3 id="9、AP-mode-http-service"><a href="#9、AP-mode-http-service" class="headerlink" title="9、AP mode + http service"></a>9、AP mode + http service</h3><ol>
+<li><p>SSID 与 passwd在menuconfig中配置</p>
+</li>
+<li><p>http service 参考：esp-idf&#x2F;examples&#x2F;protocols&#x2F;http_service</p>
+<p>编写setting.html文件，添加到main&#x2F;CMakeLists.txt–&gt;EMBED_FILES  “setting.html”，分区表添加spiffs，用于存储setting.html文件</p>
+</li>
+</ol>
+<p>HTTP与HTTPS请求服务器数据：</p>
+<p>HTTP:参考esp-idf&#x2F;examples&#x2F;protocols&#x2F;http_request</p>
+<p>心知天气、苏宁时间、B站粉丝数</p>
+<p>HTTPS: 获取网站ca证书：openssl s_client-showcerts-connect api seniverse.com:443 &lt;&#x2F;dev&#x2F;null    复制—-BEGIN CERTIFICATE—后内容到pem文件</p>
+<p>Makefile添加证书EMBED_TXTFILES “server_root_cert.pem”</p>
+<p>main&#x2F;component.mk添加COMPONENT_EMBED_TXTFILES :&#x3D;server_root_cert.pem</p>
+<h3 id="10、STA-mode-wifi-connect"><a href="#10、STA-mode-wifi-connect" class="headerlink" title="10、STA mode + wifi connect"></a>10、STA mode + wifi connect</h3><p>STA参考：esp-idf&#x2F;examples&#x2F;wifi&#x2F;getting_start&#x2F;station</p>
+<p>STA scan</p>
+<h3 id="11、显示字库图标"><a href="#11、显示字库图标" class="headerlink" title="11、显示字库图标"></a>11、显示字库图标</h3><p>图标–&gt;取模—&gt;数组</p>
+<p>字库：字体文件.TTF—-&gt;LVGL工具：LvglFontTool–&gt;加入常用汉字—&gt;XBF字体，外部bin文件</p>
+<p>字库下载到Flash:</p>
 <ul>
-<li><strong>Git 是分布式的，SVN 不是</strong>：这是 Git 和其它非分布式的版本控制系统，例如 SVN，CVS 等，最核心的区别。</li>
-<li><strong>Git 把内容按元数据方式存储，而 SVN 是按文件：</strong>所有的资源控制系统都是把文件的元信息隐藏在一个类似 .svn、.cvs 等的文件夹里。</li>
-<li><strong>Git 分支和 SVN 的分支不同：</strong>分支在 SVN 中一点都不特别，其实它就是版本库中的另外一个目录。</li>
-<li><strong>Git 没有一个全局的版本号，而 SVN 有：</strong>目前为止这是跟 SVN 相比 Git 缺少的最大的一个特征。</li>
-<li><strong>Git 的内容完整性要优于 SVN：</strong>Git 的内容存储使用的是 SHA-1 哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。</li>
+<li>添加分区（partitions.csv）:storages1, 0x40, 0x01, 0x15D000, 0x2000000</li>
+<li>idf.py menuconfig 修改flash大小为实际大小</li>
+<li>下载字体库到flash：python esptool.py –chip esp32 –port &#x2F;dev&#x2F;ttyUSB0 –baud</li>
 </ul>
+<p> write_flash -z 0x15D000 DesktopScreenFont.bin</p>
+<p>画笔相关实现，将图标文字放在同一个页面</p>
+<h2 id="7、关于ESP-IDF"><a href="#7、关于ESP-IDF" class="headerlink" title="7、关于ESP-IDF"></a>7、关于ESP-IDF</h2><h3 id="1、相关术语："><a href="#1、相关术语：" class="headerlink" title="1、相关术语："></a>1、相关术语：</h3><ol>
+<li><strong>SMP</strong>（对称多处理）；</li>
+<li><strong>ESP-IDF FreeRTOS</strong>：是基于原生 （Vanilla）FreeRTOS v10.5.1 的 FreeRTOS 实现，其中包含支持 SMP 的大量更新。最多支持两个核（即<em>双核</em> SMP），但在设计上对这种场景进行了优化；</li>
+<li><strong>Amazon SMP FreeRTOS</strong>：是由 Amazon 官方支持的 FreeRTOS SMP 实现，能够支持 <em>N 核</em>，即双核以上；</li>
+<li><strong>核亲和性</strong>：尽管 SMP 系统支持线程切换核，但在某些情况下，线程必须或应该仅在特定核上运行。因此，在 SMP 系统中，线程也具备核亲和性，指定线程在哪个特定核上运行；</li>
+<li><strong>PRO_CPU</strong>和<strong>APP_CPU</strong>：核 0 和核 1别名，反映了典型 ESP-IDF 应用程序使用这两个 CPU 的方式。负责处理 Wi-Fi 或蓝牙等协议相关处理程序的任务通常会分配给核 0，而处理应用程序其余部分的任务会分配给核 1；</li>
+<li>任务创建：内存动态&#x2F;静态分配，核亲和性；</li>
+<li><strong>Vanilla FreeRTOS 调度器</strong>：<strong>具有时间分片和固定优先级的抢占式调度器</strong>；</li>
+<li><strong>临界区</strong> (Critical Section)：在 SMP 系统中，仅<strong>禁用中断</strong>并不能构成临界区，因为存在其他核意味着共享资源仍可以同时访问。因此，IDF FreeRTOS 中的临界区使用<strong>自旋锁</strong>实现，自旋锁可以静态或动态分配；</li>
+<li></li>
+</ol>
 
       </div>
       <div class="post-tags-categories">
         
         <div class="tags">
           
-            <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" class="">
-              软件开发
+            <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/" class="">
+              嵌入式开发
             </a>
           
         </div>
@@ -596,7 +679,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2024/07/23/git/" target="_blank" title="Git">http://former-south-wind.github.io/2024/07/23/git/</a>
+    <a href="/2024/09/04/esp32-xue-xi-yu-kai-fa-mo-shui-ping-zhuo-mian-xiao-ping-mu/" target="_blank" title="esp32学习与开发-墨水屏桌面小屏幕">http://former-south-wind.github.io/2024/09/04/esp32-xue-xi-yu-kai-fa-mo-shui-ping-zhuo-mian-xiao-ping-mu/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -614,41 +697,22 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img" style="background-size: cover; 
-      background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-    </div>
-    <a href="/2024/08/30/type-c/" class="post-nav-link">
-      <div class="title">
-        <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">Type-C</div>
-      </div>
-      
-      <!-- <div class="content">
-        1、参考资料Type-C协议简介（CC检测原理)
-2、实际应用1、5V取电
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" class="lazyload placeholder" data-srcset="https://pic4.zhimg.com/80/v2-e434e3a2888fb4efb1844845b8791d1f_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" class="lazyload placeholder" data-srcset="https://pic2.zhimg.com/80/v2-63bbdb5b76b8d349ad35ff4281efbd37_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2024/07/19/ti-rtos/" class="post-nav-link">
+    <a href="/2024/08/30/type-c/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">TI-RTOS</div>
+        <div class="title-text">Type-C</div>
       </div>
       <!-- <div class="content">
-        电源控制（三种低功耗模式：sleep、stop、standby待机)  
-1、学习1、任务①创建任务：（1）Task_H
+        1、参考资料Type-C协议简介（CC检测原理)
+2、实际应用1、5V取电
       </div> -->
     </a>
   </div>
@@ -879,7 +943,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81-Git-%E7%AE%80%E4%BB%8B"><span class="toc-text">1、 Git 简介</span></a></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81%E5%AD%A6%E4%B9%A0"><span class="toc-text">1、学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-text">1、需求分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81-%E6%96%B9%E6%A1%88%E9%80%89%E5%9E%8B"><span class="toc-text">2、 方案选型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E7%BB%98%E5%88%B6PCB"><span class="toc-text">3、绘制PCB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E8%AE%BE%E8%AE%A1%E6%A2%B3%E7%90%86%EF%BC%8C%E7%BB%98%E5%88%B6%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-text">4、设计梳理，绘制流程图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">5、 开发环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81Linux"><span class="toc-text">1、Linux:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81windows"><span class="toc-text">2、windows:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81iats-pro-esp-idf3-0-windows"><span class="toc-text">3、iats_pro @esp-idf3.0 @windows</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E7%A8%8B%E5%BA%8F%E7%BC%96%E5%86%99"><span class="toc-text">6、程序编写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E6%97%A5%E5%BF%97%E6%89%93%E5%8D%B0"><span class="toc-text">1、日志打印</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E3%80%81%E5%A4%9A%E4%BB%BB%E5%8A%A1"><span class="toc-text">2 、多任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81Timer-%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97"><span class="toc-text">3、Timer+消息队列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-text">4、文件系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81NVS-%E9%9D%9E%E6%98%93%E5%A4%B1%E6%80%A7%E5%AD%98%E5%82%A8"><span class="toc-text">5、NVS-非易失性存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81GPIO"><span class="toc-text">6、GPIO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81I2C"><span class="toc-text">7、I2C</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81SPI"><span class="toc-text">8、SPI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81AP-mode-http-service"><span class="toc-text">9、AP mode + http service</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E3%80%81STA-mode-wifi-connect"><span class="toc-text">10、STA mode + wifi connect</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11%E3%80%81%E6%98%BE%E7%A4%BA%E5%AD%97%E5%BA%93%E5%9B%BE%E6%A0%87"><span class="toc-text">11、显示字库图标</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%81%E5%85%B3%E4%BA%8EESP-IDF"><span class="toc-text">7、关于ESP-IDF</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD%EF%BC%9A"><span class="toc-text">1、相关术语：</span></a></li></ol></li></ol></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
